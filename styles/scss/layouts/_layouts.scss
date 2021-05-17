@@ -52,6 +52,9 @@ header{
 .contact{
 	height: 1130px;
 	background: url(images/footer/contact-bg.jpg) center no-repeat;
+	form{
+		border:5px solid $brown;
+	}
 }
 footer{
 

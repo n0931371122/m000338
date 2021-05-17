@@ -29,6 +29,9 @@
   margin: auto;
 }
 //lh 相關
+.lh1{
+  line-height: 1;
+}
 .lh16{
   line-height: 1.6;
 }
@@ -113,6 +116,9 @@
 // flex 相關
 .flex-wrap{
   flex-wrap: wrap;
+}
+.flex-grow{ 
+  flex-grow: 1;
 }
 .flex-center{
   display: flex;

@@ -360,6 +360,7 @@
  ========================================================================== */
 label {
   margin-bottom: 0;
+  line-height: normal;
 }
 
 textarea {
@@ -718,6 +719,31 @@ header .menu {
 }
 .contact form {
   border: 5px solid #7A5E53;
+  border-top: 0;
+}
+.contact form > div {
+  position: relative;
+  top: -35px;
+}
+.contact form > div .font-65 {
+  position: relative;
+}
+.contact form > div .font-65::before, .contact form > div .font-65::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: calc((100% - 370px) / 2);
+  height: 5px;
+  background: #7A5E53;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.contact form > div .font-65::before {
+  left: -5px;
+}
+.contact form > div .font-65::after {
+  right: -5px;
 }
 
 @-webkit-keyframes slideRight {

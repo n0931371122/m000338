@@ -54,6 +54,32 @@ header{
 	background: url(images/footer/contact-bg.jpg) center no-repeat;
 	form{
 		border:5px solid $brown;
+		border-top:0;
+		>div{
+			position: relative;
+			top: -35px;
+			.font-65{
+				position: relative;
+				&::before,
+				&::after{
+					content:"";
+					display: block;
+					position: absolute;
+					width: calc((100% - 370px) / 2);
+					height: 5px;
+					background: $brown;
+					top: 50%;
+					
+					transform: translateY(-50%);
+				}
+				&::before{
+					left: -5px;
+				}
+				&::after{
+					right: -5px;
+				}
+			}
+		}
 	}
 }
 footer{

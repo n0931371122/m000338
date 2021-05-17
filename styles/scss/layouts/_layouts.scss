@@ -1,0 +1,58 @@
+html.menuOpen{
+	.menu-toggle{
+		img{
+			display: none;
+		}
+		i{
+			display: block;
+		}
+		span{
+			&:nth-child(3){
+				display: none;
+			}
+			&:nth-child(4){
+				display: block;
+			}
+		}
+	}
+	.menu{
+		right: 0;
+	}
+	header{
+		>.row{
+			color:black !important;
+		}
+		.reservation{
+			opacity: 0;
+			pointer-events: none;
+		}
+	}
+
+}
+header{
+	height: 90px;
+	.menu-toggle{
+		i{
+			display: none;
+		}
+		span{
+			&:nth-child(4){
+				display: none;
+			}
+		}
+	}
+	.menu{
+		top:0px;
+		right: -720px;
+		width: 720px;
+		height:100vh;
+		transition: right .3s; 
+	}
+}
+.contact{
+	height: 1130px;
+	background: url(images/footer/contact-bg.jpg) center no-repeat;
+}
+footer{
+
+}

@@ -10,16 +10,28 @@
                     <div class="max580 text-align-left mt-4 pt-1">
                         <div class="from-group d-flex align-center bg-white03 mb-3 py-2 px-4">
                             <label for="name" class="pr-4">姓　　名</label>
-                            <input type="text" class="border-0 flex-grow text-white">
+                            <input type="text" id="name" name="name" class="border-0 flex-grow text-white">
                         </div>
                         <div class="from-group d-flex align-center bg-white03 mb-3 py-2 px-4">
-                            <label for="">電　　話</label>
-                            <input type="text" class="border-0 flex-grow text-white">
+                            <label for="tel">電　　話</label>
+                            <input type="text" id="tel" name="tel" class="border-0 flex-grow text-white">
                         </div>
                         <div class="from-group d-flex align-center bg-white03 mb-3 py-2 px-4">
-                            <label for="">電子信箱</label>
-                            <input type="email" class="border-0 flex-grow text-white">
+                            <label for="email">電子信箱</label>
+                            <input type="email" id="email" name="email" class="border-0 flex-grow text-white">
                         </div>
+                        <div class="from-group d-flex bg-white03 mb-3 py-2 px-4">
+                            <label for="message" class="mt-1">聯繫內容</label>
+                            <textarea name="message" id="message" class="border-0 flex-grow text-white" rows="3"></textarea>
+                        </div>
+                        <div class="from-group d-flex align-center bg-white03 mb-3 py-2 px-4">
+                            <label for="verificationCode">驗證碼</label>
+                            <div>
+                                <input type="text" id="verificationCode" name="verificationCode" class="border-0 flex-grow text-white">
+                            </div>
+                            <img src="styles/images/footer/verificationCode.png" alt="">
+                        </div>
+                        <button class="font-20 text-white bg-brown py-4" type="submit">預約賞屋</button>
                     </div>
                 </div>
             </form>

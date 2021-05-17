@@ -32,6 +32,11 @@
   src: url(Amiri-Bold.ttf);
   font-weight: 700;
 }
+@font-face {
+  font-family: Roboto;
+  src: url(Roboto-Regular.ttf);
+  font-weight: 400;
+}
 .Heebo {
   font-family: "Heebo";
 }
@@ -46,6 +51,10 @@
 
 .CormorantInfant {
   font-family: Cormorant Infant;
+}
+
+.Roboto {
+  font-family: Roboto;
 }
 
 .max476 {
@@ -108,6 +117,10 @@
   background: #7A5E53;
 }
 
+.bg-darkBrown {
+  background: #331902;
+}
+
 .font-weight-500 {
   font-weight: 500;
 }
@@ -122,6 +135,18 @@
 
 .text-6D6D6D {
   color: #6D6D6D;
+}
+
+.text-brown776356 {
+  color: #776356;
+}
+
+.text-hover-white {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.text-hover-white:hover {
+  color: white;
 }
 
 .border-top-black-2 {
@@ -568,6 +593,8 @@ input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
+  -webkit-text-fill-color: white;
+  /*字體顏色*/
   -webkit-transition: background-color 5000s ease-in-out 0s;
   transition: background-color 5000s ease-in-out 0s;
   /*透明*/
@@ -671,11 +698,6 @@ input[type=number] {
   line-height: inherit;
 }
 
-.bootstrap-select .dropdown-toggle {
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
-}
-
 html.menuOpen .menu-toggle img {
   display: none;
 }
@@ -724,6 +746,11 @@ header .menu {
 .contact form {
   border: 5px solid #7A5E53;
   border-top: 0;
+}
+.contact form label {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 96px;
+          flex: 0 0 96px;
 }
 .contact form > div {
   position: relative;

@@ -13,6 +13,9 @@
 .CormorantInfant{
   font-family: Cormorant Infant;  
 }
+.Roboto{
+ font-family:  Roboto;
+}
 // height  相關{
 
 //width 相關
@@ -74,6 +77,9 @@
 .bg-brown{
   background: $brown;
 }
+.bg-darkBrown{
+  background: $darkBrowm;
+}
 
 
 //font-weight 相關
@@ -88,9 +94,17 @@
   color:black;
 }
 .text-6D6D6D{
-  color:$gray6D6D6D;
+  color:$gray6D6D6D; 
 }
-
+.text-brown776356{
+  color:$brown776356;
+}
+.text-hover-white{
+  transition: all .3s;
+  &:hover{
+    color:white;
+  }
+}
 //border 相關
 .border-top-black-2{
   border-top:2px solid black;

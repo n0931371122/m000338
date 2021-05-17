@@ -9,12 +9,16 @@
                     <p class="max476">為了提供您更完善的服務，請務必輸入正確的資料，我們將盡快請專人回覆，謝謝您！ </p>
                     <div class="max580 text-align-left mt-4 pt-1">
                         <div class="from-group d-flex align-center bg-white03 mb-3 py-2 px-4">
-                            <label for="" class="pr-4">姓　　名</label>
+                            <label for="name" class="pr-4">姓　　名</label>
                             <input type="text" class="border-0 flex-grow text-white">
                         </div>
                         <div class="from-group d-flex align-center bg-white03 mb-3 py-2 px-4">
-                            <label for="">姓 名</label>
+                            <label for="">電　　話</label>
                             <input type="text" class="border-0 flex-grow text-white">
+                        </div>
+                        <div class="from-group d-flex align-center bg-white03 mb-3 py-2 px-4">
+                            <label for="">電子信箱</label>
+                            <input type="email" class="border-0 flex-grow text-white">
                         </div>
                     </div>
                 </div>

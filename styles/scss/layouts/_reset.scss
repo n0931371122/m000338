@@ -89,14 +89,8 @@ body{
 	-webkit-font-smoothing: antialiased;
 	color:black;
 	overflow-x: hidden;
-	line-height: 1.8;
+	line-height: normal;
 	transition: opacity .3s;   
-}
-main{
-	padding-top: 72px;
-	@media (max-width:1400px) {
-		padding-top: 60px;
-	}
 }
 
 

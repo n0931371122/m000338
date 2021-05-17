@@ -1,4 +1,4 @@
-<header class="row text-white posiiton-relative z-1 mx-0">
+<header class="row text-white z-1 w-100 mx-0">
 	<div class="col-6 d-flex align-center pl-4 pr-0">
 		<div class="logo ml-5 pl-5">
 			<i class="icon-logo font-20"></i>

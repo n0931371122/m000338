@@ -80,6 +80,10 @@
   line-height: 1.6;
 }
 
+.lh165 {
+  line-height: 1.65;
+}
+
 .max1640 {
   max-width: 1640px;
   margin: auto;
@@ -121,6 +125,10 @@
   background: #331902;
 }
 
+.bg-grayF8F8F8 {
+  background: #F8F8F8;
+}
+
 .font-weight-500 {
   font-weight: 500;
 }
@@ -153,6 +161,14 @@
   border-top: 2px solid black;
 }
 
+.border-white-3 {
+  border: 3px solid white;
+}
+
+.border-bottom-brown776356 {
+  border-bottom: 1px solid #776356;
+}
+
 .rounded-5 {
   border-radius: 5px;
 }
@@ -182,6 +198,11 @@
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+}
+
+.flex-shrink-0 {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .flex-center {
@@ -251,6 +272,34 @@
 
 .point-event-all {
   pointer-events: all;
+}
+
+.mycol-1 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 12.5%;
+          flex: 0 0 12.5%;
+  max-width: 12.5%;
+}
+
+.mycol-2 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.mycol-5 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 62.5%;
+          flex: 0 0 62.5%;
+  max-width: 62.5%;
+}
+
+.mycol-6 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 75%;
+          flex: 0 0 75%;
+  max-width: 75%;
 }
 
 .font-80 {
@@ -477,18 +526,9 @@ body {
   -webkit-font-smoothing: antialiased;
   color: black;
   overflow-x: hidden;
-  line-height: 1.8;
+  line-height: normal;
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
-}
-
-main {
-  padding-top: 72px;
-}
-@media (max-width: 1400px) {
-  main {
-    padding-top: 60px;
-  }
 }
 
 .safari body {
@@ -698,6 +738,96 @@ input[type=number] {
   line-height: inherit;
 }
 
+.banner {
+  height: 100vh;
+  position: relative;
+}
+.banner::before {
+  content: "";
+  left: 0;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  display: block;
+  background-size: calc(100%/8);
+  background-image: linear-gradient(90deg, transparent 0px, transparent calc(100% - 1px), red calc(100% - 1px), red 100%);
+}
+.banner .text {
+  width: 100%;
+  left: 7%;
+  top: 53.5%;
+  padding-left: 100px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.banner .text img {
+  width: 56%;
+}
+.banner .text .scrollDown {
+  width: 37px;
+  height: 37px;
+}
+.banner .text .scrollDown i {
+  line-height: 0;
+}
+.banner .text .scrollDown i::before {
+  line-height: 37px;
+}
+.banner .links {
+  bottom: 0;
+  left: 0;
+}
+.banner .links a {
+  padding: 15px 15px;
+  width: 238px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.banner .links a:hover, .banner .links a.active {
+  background: #331902;
+}
+.banner .links a:hover span, .banner .links a.active span {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.banner .links a:hover span:nth-child(1), .banner .links a.active span:nth-child(1) {
+  color: white;
+}
+.banner .links a:hover span:nth-child(2), .banner .links a.active span:nth-child(2) {
+  color: #776356;
+}
+
+.video-element {
+  height: 0;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+.video-element iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.mask {
+  position: relative;
+}
+.mask::before {
+  content: "";
+  left: 0;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  display: block;
+  background-size: calc(100%/8);
+  background-image: linear-gradient(90deg, transparent 0px, transparent calc(100% - 1px), red calc(100% - 1px), red 100%);
+}
+
 html.menuOpen .menu-toggle img {
   display: none;
 }
@@ -722,6 +852,7 @@ html.menuOpen header .reservation {
 }
 
 header {
+  position: absolute;
   height: 90px;
 }
 header .menu-toggle i {
@@ -870,4 +1001,23 @@ header .menu {
   .historyPage .year-block > div {
     width: 100%;
   }
+}
+
+#landmark .dec-line {
+  position: relative;
+}
+#landmark .dec-line::after {
+  content: "";
+  position: absolute;
+  display: block;
+  background: #BCBCBC;
+  width: 560px;
+  height: 1px;
+  bottom: -1px;
+  left: 0;
+  z-index: -1;
+}
+#landmark .dec-block {
+  height: 784px;
+  bottom: 0;
 }/*# sourceMappingURL=style.css.map */

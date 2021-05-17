@@ -38,6 +38,9 @@
 .lh16{
   line-height: 1.6;
 }
+.lh165{
+  line-height: 1.65;
+}
 //max-width 相關
 .max1640{
   max-width: 1640px;
@@ -78,9 +81,11 @@
   background: $brown;
 }
 .bg-darkBrown{
-  background: $darkBrowm;
+  background: $darkBrown;
 }
-
+.bg-grayF8F8F8{
+  background: $grayF8F8F8;
+}
 
 //font-weight 相關
 .font-weight-500{
@@ -109,7 +114,12 @@
 .border-top-black-2{
   border-top:2px solid black;
 }
-
+.border-white-3{
+    border:3px solid white;
+}
+.border-bottom-brown776356{
+    border-bottom:1px solid $brown776356;
+}
 
 // rounded 相關
 .rounded-5{
@@ -136,6 +146,9 @@
 }
 .flex-grow{ 
   flex-grow: 1;
+}
+.flex-shrink-0{
+  flex-shrink: 0;
 }
 .flex-center{
   display: flex;
@@ -179,4 +192,20 @@
 }
 .point-event-all{
   pointer-events: all;
+}
+.mycol-1{
+    flex: 0 0 12.5%;
+    max-width: 12.5%;
+}
+.mycol-2{
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+.mycol-5{
+    flex: 0 0 62.5%;
+    max-width: 62.5%;
+}
+.mycol-6{
+    flex: 0 0 75%;
+    max-width: 75%;
 }

@@ -3,24 +3,30 @@
     position: relative;
     &::before{
         content: '';
+        pointer-events: none;
         left: 0;
         width: 100%;
         position: absolute;
-        z-index: 1;
+        z-index: 2;
         top: 0;
         bottom: 0;
         display: block;
         background-size: calc(100%/8);
-        background-image: linear-gradient(90deg, transparent 0px ,transparent calc(100% - 1px) ,red calc(100% - 1px),red 100%);
+        background-image: linear-gradient(90deg, transparent 0px ,transparent calc(100% - 1px) ,rgba(255,255,255,0.08) calc(100% - 1px),rgba(255,255,255,0.08) 100%);
     }
     .text{
         width: 100%;
-        left: 7%;
+        left: 0;
         top: 53.5%;
-        padding-left: 100px;
+        padding-left: 12.5%;
         transform: translateY(-50%);
-        img{
+        .text-img{
             width: 56%;
+            transition:  all .3s;
+            &.hide{
+                opacity: 0;
+                pointer-events: none;
+            }
         }
         .scrollDown{
             width: 37px;
@@ -36,9 +42,9 @@
     .links{
         bottom: 0;
         left: 0;
+        width: 50%;
         a{
             padding: 15px 15px;
-            width: 238px;
             transition: all .3s;
             &:hover,
             &.active{
@@ -52,6 +58,30 @@
                         color:$brown776356;
                     }
                 }
+            }
+        }
+    }
+    @media(max-width:1199px){
+        &::before{
+            display: none;
+        }
+        .links{
+            width: 100%;
+        }
+    }
+    @media(max-width:767px){
+        .text{
+            top: auto;
+            transform: none;
+            bottom: 50px;
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+    }
+    @media(max-width:575px){
+        .text{
+            img{
+                width: 100%;
             }
         }
     }
@@ -75,11 +105,34 @@
         left: 0;
         width: 100%;
         position: absolute;
-        z-index: 1;
+        z-index: -1;
         top: 0;
         bottom: 0;
         display: block;
         background-size: calc(100%/8);
         background-image: linear-gradient(90deg, transparent 0px ,transparent calc(100% - 1px) ,red calc(100% - 1px),red 100%);
     }
+    @media(max-width:1199px){
+        &:before{
+            display: none;
+        }
+    }
+}
+.left-brown-line-dec{
+    position: relative;
+    &::before{
+        content:"";
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 2px;
+        height: calc(100% - 20px);
+        background: $darkBrown;
+    }
+}
+.verticalText{
+    -webkit-writing-mode: vertical-lr;
+    writing-mode: vertical-lr ;
 }

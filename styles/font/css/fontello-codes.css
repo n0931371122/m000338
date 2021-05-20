@@ -5,3 +5,7 @@
 .icon-close:before { content: '\e804'; } /* '' */
 .icon-fb:before { content: '\e805'; } /* '' */
 .icon-line:before { content: '\e806'; } /* '' */
+.icon-line-mobile:before { content: '\e813'; } /* '' */
+.icon-tel:before { content: '\e814'; } /* '' */
+.icon-left:before { content: '\f177'; } /* '' */
+.icon-right:before { content: '\f178'; } /* '' */

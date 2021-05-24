@@ -7,7 +7,7 @@
 </head>
 
 <body>
-    <div class="wp" id="landmark">
+    <div class="wp  banner-text-hide" id="landmark" data-target="0">
         <?php include "header.php"; ?>
         <!-- main ======================================================================================= -->
         <main>
@@ -20,7 +20,7 @@
                     <img src="styles/images/landmark/banner.jpg" alt="">
                 </div>
                 <div class="text text-white position-absolute">
-                    <img class="text-img pb-md-4 mb-3 mb-md-2" src="styles/images/landmark/text.svg" alt="">
+                    <p class="font-165 lh09 mb-1 mb-sm-0">LANDMARK95</p>
                     <p class="NotoSerifTC font-22 font-weight-bold lh14 mb-2 pb-2">永恆地標，超越時間限制的時代印記</p>
                     <div class="flex-align-center pt-3 pt-md-5">
                         <div class="scrollDown flex-center border-white-3 rounded-circle flex-shrink-0 mr-3">
@@ -29,39 +29,13 @@
                         <span class="font-16">SCROLL DOWN</span>
                     </div>
                 </div>
-                <div class="d-none d-md-table links text-brown776356 text-center position-absolute z-1">
-                    <ul class="noneStyle bg-white row mx-0">
-                        <li class="col-3 px-0">
-                            <a class="d-block active" href="">
-                                <span class="d-block font-20 NotoSerifTC font-weight-500">遠雄九五</span>
-                                <span class="font-16 text-6D6D6D">LANDMARK 95</span>
-                            </a>
-                        </li>
-                        <li class="col-3 px-0">
-                            <a class="d-block" href="">
-                                <span class="d-block font-20 NotoSerifTC font-weight-500">高空會所</span>
-                                <span class="font-16 text-6D6D6D">AMENITIES</span>
-                            </a>
-                        </li>
-                        <li class="col-3 px-0">
-                            <a class="d-block" href="">
-                                <span class="d-block font-20 NotoSerifTC font-weight-500">層峰生活</span>
-                                <span class="font-16 text-6D6D6D">RESIDENCE</span>
-                            </a>
-                        </li>
-                        <li class="col-3 px-0">
-                            <a class="d-block" href="">
-                                <span class="d-block font-20 NotoSerifTC font-weight-500">核心區域</span>
-                                <span class="font-16 text-6D6D6D">LOCATION</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                <?php include "links.php"; ?>
             </div>
             <div class="editor" id="landmarkEditor">
+                <!--編輯器開始-->
                 <div class="section-1 mask pt-5">
                     <div class="position-relative">
-                        <div class="d-none d-lg-flex row dec-block position-absolute w-100">
+                        <div class="d-none d-lg-flex row dec-block position-absolute w-100 mx-0">
                             <div class="mycol-6 bg-grayF8F8F8"></div>
                             <div class="mycol-2"></div>
                         </div>
@@ -70,7 +44,7 @@
                                 <div class="blank"></div>
                                 <div class="col-12 mycol-lg-3 mycol-xl-2 z-1 pl-0 pr-0 pr-lg-4 pb-4 pb-md-0">
                                     <p class="font-65 lh1 mb-1">No.1 Brand as the Industry Leader</p>
-                                    <p class="NotoSerifTC font-26 font-weight-bold text-brown776356 dec-line mb-2 mb-xl-3">
+                                    <p class="NotoSerifTC font-26 font-weight-bold text-brown776356 dec-line position-relative mb-2 mb-xl-3">
                                         <span class="d-table border-bottom-brown776356 pb-4 pb-xl-5">領先業界 第一品牌</span>
                                     </p>
                                     <div class="font-20 lh165 pt-4 mt-xl-4 pb-xl-5">
@@ -146,59 +120,62 @@
                         </div>
                         <div class="row mx-0">
                             <div class="col-12 mycol-xl-7 text-white px-0">
-                                <div class="slider position-relative mb-0 pb-5 pb-md-0">
-                                    <div class="item position-relative">
-                                        <div class="img position-relative h-100" style="background-image:url(styles/images/landmark/slider-1.jpg)">
-                                            <div class="name-group">
-                                                <div class="tag verticalText py-2">地標建築師</div>
-                                                <span class="name verticalText font-35 font-weight-bold NotoSerifTC">李祖原</span>
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="img position-relative" style="background-image:url(styles/images/landmark/slider-1.jpg)">
+                                                <div class="name-group">
+                                                    <div class="tag verticalText py-2">地標建築師</div>
+                                                    <span class="name verticalText font-35 font-weight-bold NotoSerifTC">李祖原</span>
+                                                </div>
+                                            </div>
+                                            <div class="text-group position-lg-absolute p-4 p-xl-0">
+                                                <div class="number position-relative position-xl-absolute font-150 lh1 mb-1 mb-md-0">01</div>
+                                                <div class="max495 pb-md-1">
+                                                    <p class="font-44 NotoSerifTC font-weight-bold lh13 mb-2 mb-xl-4 pb-2">
+                                                        <span class="d-block">新東方美學泰斗</span>
+                                                        <span class="d-block">打造改變城市的經典建築</span>
+                                                    </p>
+                                                    <p class="font-20 lh165">以 天、地、⼈三元合⼀概念，讓「九五」擁有一種獨特的能力，可以同時傳達東方藝術與西方精神、大器與細膩，嫺熟的建材應用，每一個立面、每一道線條，都流露出古典文人氣息，並兼具俐落簡約之美。</p>
+                                                </div>
+                                                <button type="button" class="flex-align-center text-white border-bottom-white py-2 mt-xl-5" data-toggle="modal" data-target="#person-1">
+                                                    <span class="pr-5 mr-4">觀看代表作品</span>
+                                                    <i class="icon-right"></i>
+                                                </button>
                                             </div>
                                         </div>
-                                        <div class="text-group position-lg-absolute p-4 p-xl-0">
-                                            <div class="number position-relative position-xl-absolute font-150 lh1 mb-1 mb-md-0">01</div>
-                                            <div class="max495 pb-md-1">
-                                                <p class="font-44 NotoSerifTC font-weight-bold lh13 mb-2 mb-xl-4 pb-2">
-                                                    <span class="d-block">新東方美學泰斗</span>
-                                                    <span class="d-block">打造改變城市的經典建築</span>
-                                                </p>
-                                                <p class="font-20 lh165">以 天、地、⼈三元合⼀概念，讓「九五」擁有一種獨特的能力，可以同時傳達東方藝術與西方精神、大器與細膩，嫺熟的建材應用，每一個立面、每一道線條，都流露出古典文人氣息，並兼具俐落簡約之美。</p>
+                                        <div class="swiper-slide">
+                                            <div class="img position-relative" style="background-image:url(styles/images/landmark/slider-1.jpg)">
+                                                <div class="name-group">
+                                                    <div class="tag verticalText py-2">地標建築師</div>
+                                                    <span class="name verticalText font-35 font-weight-bold NotoSerifTC">李祖原</span>
+                                                </div>
                                             </div>
-                                            <button type="button" class="flex-align-center text-white border-bottom-white py-2 mt-xl-5" data-toggle="modal" data-target="#person-1">
-                                                <span class="pr-5 mr-4">觀看代表作品</span>
-                                                <i class="icon-right"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="item position-relative">
-                                        <div class="img position-relative h-100" style="background-image:url(styles/images/landmark/slider-1.jpg)">
-                                            <div class="name-group">
-                                                <div class="tag verticalText py-2">地標建築師</div>
-                                                <span class="name verticalText font-35 font-weight-bold NotoSerifTC">李祖原</span>
+                                            <div class="text-group position-lg-absolute p-4 p-xl-0">
+                                                <div class="number position-relative position-xl-absolute font-150 lh1 mb-1 mb-md-0">01</div>
+                                                <div class="max495 pb-md-1">
+                                                    <p class="font-44 NotoSerifTC font-weight-bold lh13 mb-2 mb-xl-4 pb-2">
+                                                        <span class="d-block">新東方美學泰斗</span>
+                                                        <span class="d-block">打造改變城市的經典建築</span>
+                                                    </p>
+                                                    <p class="font-20 lh165">以 天、地、⼈三元合⼀概念，讓「九五」擁有一種獨特的能力，可以同時傳達東方藝術與西方精神、大器與細膩，嫺熟的建材應用，每一個立面、每一道線條，都流露出古典文人氣息，並兼具俐落簡約之美。</p>
+                                                </div>
+                                                <button type="button" class="flex-align-center text-white border-bottom-white py-2 mt-xl-5" data-toggle="modal" data-target="#person-1">
+                                                    <span class="pr-5 mr-4">觀看代表作品</span>
+                                                    <i class="icon-right"></i>
+                                                </button>
                                             </div>
-                                        </div>
-                                        <div class="text-group position-lg-absolute p-4 p-xl-0">
-                                            <div class="number position-relative position-xl-absolute font-150 lh1 mb-1 mb-md-0">01</div>
-                                            <div class="max495 pb-md-1">
-                                                <p class="font-44 NotoSerifTC font-weight-bold lh13 mb-2 mb-xl-4 pb-2">
-                                                    <span class="d-block">新東方美學泰斗</span>
-                                                    <span class="d-block">打造改變城市的經典建築</span>
-                                                </p>
-                                                <p class="font-20 lh165">以 天、地、⼈三元合⼀概念，讓「九五」擁有一種獨特的能力，可以同時傳達東方藝術與西方精神、大器與細膩，嫺熟的建材應用，每一個立面、每一道線條，都流露出古典文人氣息，並兼具俐落簡約之美。</p>
-                                            </div>
-                                            <button type="button" class="flex-align-center text-white border-bottom-white py-2 mt-xl-5" data-toggle="modal" data-target="#person-1">
-                                                <span class="pr-5 mr-4">觀看代表作品</span>
-                                                <i class="icon-right"></i>
-                                            </button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="dots-block col-12 mycol-xl-1 flex-center px-0 pt-4 pt-xl-0">
-                                <div id="dots"></div>
+                                <div class="swiper-pagination"></div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!--編輯器結束-->
             </div>
         </main>
         <!-- main ======================================================================================= -->

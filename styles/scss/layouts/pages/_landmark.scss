@@ -1,6 +1,5 @@
 #landmark{
     .dec-line{
-        position: relative;
         &::after{
             content:"";
             position: absolute;
@@ -40,9 +39,12 @@
     }
     .section-3{
         padding-bottom: 124px;
-        .item{
+        .swiper-slide{
             height: 830px;
             background-position: right 40% center;
+            .img{
+                height: 100%;
+            }
             .name-group{
                 position: absolute;
                 left: 7.5%;
@@ -99,38 +101,43 @@
                 }
             }
         }
-        .slick-dots{
+        .swiper-pagination{
             position: static;
-            li{
+            .swiper-pagination-bullet{
                 display: flex;
                 width: 66px;
                 height: 66px;
-                border-radius: 50%;
-                border:1px solid transparent;
                 transition: all .3s;
-                &:not(.slick-active):hover{
+                background: transparent;
+                position: relative;
+                opacity: 1;
+                &:not(.swiper-pagination-bullet-active):hover{
                     &::after{
                         border:1px solid $gray6D6D6D;
                     }
                 }
-                &.slick-active{
+                &.swiper-pagination-bullet-active{
                     border:1px solid $brown;
                 }
+                &::before,
                 &::after{
                     content:"";
                     display: block;
                     position: absolute;
-                    width: 50%;
-                    height: 50%;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
                     border-radius: 50%;
-                    border:1px solid transparent;
                     transition:  all .3s;
                 }
-                button{
+                &::after{
+                    width: 50%;
+                    height: 50%;
+                }
+                &::before{
                     width: 4px;
                     height: 4px;
                     background: black;
-                    padding: 0;
                 }
             }   
             
@@ -212,7 +219,7 @@
             }
         }
         .section-3{
-            .item{
+            .swiper-slide{
                 .img{
                     background-position: left 35% center;
                 }
@@ -239,7 +246,7 @@
         }
         .section-3{
             padding-bottom: 35px;
-            .item{
+            .swiper-slide{
                 .img{
                     background-position: right 90% center;
                 }
@@ -277,8 +284,7 @@
                     }
                 }
             }
-
-            .slick-dots li{
+            .swiper-pagination .swiper-pagination-bullet{
                 display: inline-flex;
                 width: 40px;
                 height: 40px;
@@ -309,12 +315,10 @@
         }
         .section-3{
             background: $grayF8F8F8;
-            .slick-slide{
-                padding-bottom: 10px;
-            }
-            .item{
-                height: 750px;
+            .swiper-slide{
+                height: auto;
                 .img{
+                    height: 750px;
                     background-position: right 75% center;
                     margin-bottom: 100px;
                 }
@@ -349,9 +353,9 @@
             .dots-block{
                 top: 386px;
             }
-            .item{
-                height: 390px;
+            .swiper-slide{
                 .img{
+                    height: 390px;
                     background-position: right 80% center;
                     background-size: cover;
                     margin-bottom: 64px;

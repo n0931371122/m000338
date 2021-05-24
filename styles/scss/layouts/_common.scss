@@ -20,9 +20,9 @@
         top: 53.5%;
         padding-left: 12.5%;
         transform: translateY(-50%);
-        .text-img{
-            width: 56%;
-            transition:  all .3s;
+        .font-165{
+            letter-spacing: 5px;
+            transition: opacity .3s;
             &.hide{
                 opacity: 0;
                 pointer-events: none;
@@ -109,6 +109,7 @@
         top: 0;
         bottom: 0;
         display: block;
+        pointer-events: none;
         background-size: calc(100%/8);
         background-image: linear-gradient(90deg, transparent 0px ,transparent calc(100% - 1px) ,red calc(100% - 1px),red 100%);
     }

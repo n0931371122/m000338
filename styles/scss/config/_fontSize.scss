@@ -16,6 +16,9 @@
 .font-60{
   @include fz(60px);
 }
+.font-55{
+  @include fz(55px);
+}
 .font-44 {
   @include fz(44px);
 }
@@ -149,6 +152,9 @@
   }
   .font-60 {
     @include fz(35px);
+  }
+  .font-55{
+    @include fz(34px);
   }
   .font-44 {
     @include fz(28px);

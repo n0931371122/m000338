@@ -43,7 +43,7 @@
             >div{
                 width: 60px;
                 height: 60px;
-                box-shadow: 0 0 10px rgba(0,0,0,0.3);
+                box-shadow: 0 0 10px rgba(0,0,0,0.2);
             }
         }
         .pagination-wrapper{
@@ -68,7 +68,6 @@
             
         }
         .swiper-wrapper{
-            cursor: none;
             .jqimgFill{
                 height: 690px;
             }
@@ -85,6 +84,9 @@
             top: 0;
             margin-top: 0;
             &::after{
+                display: none;
+            }
+            i{
                 display: none;
             }
             &.swiper-button-prev{
@@ -115,10 +117,97 @@
             }
         }
     }
+    @media(max-width:1400px){
+        .section-2{
+            .cursor{
+                display: none;
+            }
+            .swiper-wrapper{
+                .jqimgFill{
+                    height: 550px;
+                }
+               
+            }
+            .swiper-button{
+                position: static;
+                display: inline-flex;
+                cursor: pointer;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background: white;
+                box-shadow: 0 0 10px rgba(0,0,0,0.2);
+                margin: 50px 50px;
+                i{
+                    display: block;
+                }
+            }
+        }
+    }
     @media(max-width:1199px){
         .section-1{
             .max720{
                 max-width: initial;
+            }
+        }
+        .section-2{
+            margin-top: 0;
+            .main-block{
+                padding-top: 50px;
+            }
+            .pagination-wrapper{
+                 display: none;
+            }
+            .swiper-wrapper{
+                .jqimgFill{
+                    height: 400px;
+                }
+                .text{
+                    transform: none;
+                    
+                }
+               
+            }
+            .swiper-button{
+                margin: 50px 20px;
+            }
+        }
+    }
+    @media(max-width:991px){
+        .section-1 .font-26{
+           
+            border-bottom:1px solid #BCBCBC;
+            span{
+                position: relative;
+                &::before{
+                    content:"";
+                    display: block;
+                    position: absolute;
+                    bottom: -1px;
+                    left: 0;
+                    background: $brown776356;
+                    width: 100%;   
+                    height: 1px;            
+                }
+            }
+        }
+        .section-2{
+            .swiper-wrapper .text{
+                 max-width: initial;
+            }
+            .swiper-button{
+                margin: 20px;
+            }
+           
+        }
+    }
+    @media(max-width:575px){
+        .section-2{
+            .swiper-wrapper .jqimgFill{
+                height: 250px;
+            }
+            .swiper-button{
+              margin: 5px 20px;
             }
         }
     }

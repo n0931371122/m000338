@@ -15,7 +15,7 @@
     .section-1{
         .dec-block{
             height: 784px;  
-            bottom: 0;
+            bottom: 5px;
             z-index: -2;
         }
     }
@@ -111,13 +111,15 @@
                 background: transparent;
                 position: relative;
                 opacity: 1;
+                transition: all .3s;
+                border:2px solid transparent;
                 &:not(.swiper-pagination-bullet-active):hover{
                     &::after{
-                        border:1px solid $gray6D6D6D;
+                        border:2px solid $gray6D6D6D;
                     }
                 }
                 &.swiper-pagination-bullet-active{
-                    border:1px solid $brown;
+                    border:2px solid $brown;
                 }
                 &::before,
                 &::after{
@@ -133,6 +135,7 @@
                 &::after{
                     width: 50%;
                     height: 50%;
+                    border:2px solid transparent;
                 }
                 &::before{
                     width: 4px;
@@ -144,8 +147,7 @@
         }
         .dec-block{
             height: 1090px;  
-            top: 50%;
-            transform: translateY(-50%);
+            bottom: 0;;
             z-index: -2;
         }
     }
@@ -245,7 +247,7 @@
             height: 413px;
         }
         .section-3{
-            padding-bottom: 35px;
+            padding-bottom: 50px;
             .swiper-slide{
                 .img{
                     background-position: right 90% center;
@@ -279,7 +281,7 @@
 
                         }
                     }
-                    .max495{
+                    div{
                         max-width: initial;
                     }
                 }
@@ -290,6 +292,15 @@
                 height: 40px;
                 &::after{
                     display: none;
+                }
+            }
+        }
+        .modal .modal-dialog{
+            height: auto;
+            .jqimgFill{
+                background: initial;
+                img{
+                    display: block !important;
                 }
             }
         }
@@ -381,7 +392,12 @@
                     }
                 }
             }
-
+            .swiper-pagination .swiper-pagination-bullet{
+                border:1px solid transparent;
+                &.swiper-pagination-bullet-active{
+                    border:1px solid #7A5E53;
+                }
+            }
         }
     }
     @media(max-width:575px){

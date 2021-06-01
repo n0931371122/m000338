@@ -15,15 +15,14 @@
                     position: absolute;
                     top: 0;
                     left: 0;
-                     background-position-x: left !important;
-                    // background-position-y: center;
+                    background-position-x: left !important;
                 }
                 #drag-button{
                     z-index: 0;
                     pointer-events: all;
                     position: absolute;
                     right: 0;
-                    top: 60%;
+                    top: 72%;
                     transform: translate(50%, -50%);
                     background:  url(images/residence/drag.png) center no-repeat;
                     width: 75px;
@@ -90,52 +89,6 @@
         }
     }
     @media(max-width:1199px){
-        .section-1{
-            #curtain{
-                transition: right .8s;
-                &.push{
-                    right: 0px;
-                }
-                &.pull{
-                    right:100vw;
-                }
-                #drag-button{
-                    display: none;
-                }
-            }
-            .tap-button{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 50px;
-                height: 50px;
-                border: 1px solid white;
-                border-radius: 50%;
-                position: absolute;
-                bottom: 20px;
-                right: 20px;
-                line-height: 40px;
-                z-index: 3;
-                text-align: center;
-                background: #0F2540;
-                cursor: pointer;
-                img{
-                    width: 30px;
-                    display: block;
-                }
-                &.push{
-                    .minus{
-                        display: none;
-                    }
-                }
-                &.pull{
-                    .plus{
-                        display: none;
-                    }
-                }
-
-            }
-        }
         .section-2{
             height: 700px;
 
@@ -148,15 +101,21 @@
     }
     @media(max-width:767px){
         .section-1 .curtain-wrapper{
-            height: 500px;
+            #curtain #drag-button{
+                width: 50px;
+                height: 50px;
+            }
         }
         .section-2{
-            height: 100vh;
+            height: calc(100vh - 60px);
+        }
+        .section-3 .swiper-pagination{
+            margin-right: -10px;
+            .swiper-pagination-bullet{
+                    margin: 0 10px;
+            }
+            
         }
     }
-    @media(max-width:575px){
-        .section-1 .curtain-wrapper{
-            height: 350px;
-        }
-    }
+
  }

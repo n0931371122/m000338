@@ -33,6 +33,10 @@
   max-width: 495px;
   margin: auto;
 }
+.max540{
+  max-width: 540px; 
+  margin: auto;
+}
 .max580{
   max-width: 580px;
   margin: auto;
@@ -42,6 +46,14 @@
 }
 .max960{
   max-width: 960px;
+  margin: auto; 
+}
+.max1200{
+  max-width: 1200px;
+  margin: auto; 
+}
+.max1680{
+  max-width: 1680px;
   margin: auto; 
 }
 .w-auto{
@@ -122,10 +134,19 @@
 .bg-grayF8F8F8{
   background: $grayF8F8F8;
 }
+.bg-hover-darkBrown{
+  transition: all .3s;
+  &:hover{
+    background:$darkBrown;
+  }
+}
 
 //font-weight 相關
 .font-weight-500{
   font-weight: 500;
+}
+.font-weight-600{
+  font-weight: 600;
 }
 .font-weight-bold{
   font-weight: 700;
@@ -152,6 +173,7 @@
     color:$brown776356 !important;
   }
 }
+
 //border 相關
 .border-top-black-2{
   border-top:2px solid black;
@@ -282,6 +304,12 @@
     flex: 0 0 87.5%;
     max-width: 87.5%;
 }
+.mycol-lg-1{
+    @media(min-width:992px){
+      flex: 0 0 12.5%;
+      max-width: 12.5%;
+    }
+}
 .mycol-lg-3{
     @media(min-width:992px){
     flex: 0 0 37.5%;
@@ -335,4 +363,13 @@
       flex: 0 0 87.5%;
       max-width: 87.5%;
     }
+}
+.les1{
+  letter-spacing: 1px;
+}
+.les2{
+  letter-spacing: 2px;
+}
+.opacity0{
+  opacity: 0;
 }

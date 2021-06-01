@@ -17,7 +17,7 @@
 			</a>
 			<a class="line col col-lg-4 flex-center" href="" target="_blank">
 				<i class="icon-line-mobile d-lg-none flex-center font-20"></i>
-				<i class="icon-line d-none d-lg-flex flex-center font-20 mr-2"></i>
+				<i class="icon-line d-none d-lg-flex flex-center font-18 mr-2"></i>
 				<span class="d-none d-lg-block CormorantInfant">LINE<span class="NotoSerifTC ml-1">諮詢</span></span>
 			</a>
 			<a class="fb d-none d-lg-flex col-auto col-lg-2 flex-center" href="" target="_blank">
@@ -33,50 +33,48 @@
 	</div>
 	<div class="menu text-black position-fixed z-1">
 		<div class="bg-white h-100">
-
 			<div class="row mx-0">
-				<a href="" class="d-lg-none font-16 flex-center col-auto ml-auto">
+				<a href="tel:+886-2-85211008" class="d-lg-none font-16 flex-center col-auto ml-auto">
 					<i class="icon-tel"></i>
 				</a>
-				<a class="line col-auto col-lg-4 flex-center" href="" target="_blank">
+				<a class="line col-auto col-lg-4 flex-center text-hover-brown776356" href="" target="_blank">
 					<i class="icon-line-mobile d-lg-none flex-center font-20"></i>
 					<i class="icon-line d-none d-lg-flex flex-center font-20 mr-2"></i>
 					<span class="d-none d-lg-block CormorantInfant">LINE<span class="NotoSerifTC ml-1">諮詢</span></span>
 				</a>
-				<a class="fb d-none d-lg-flex col-2 flex-center" href="" target="_blank">
+				<a class="fb d-none d-lg-flex col-2 flex-center text-hover-brown776356" href="" target="_blank">
 					<i class="icon-fb"></i>
 				</a>
-				<a class="lang d-none d-lg-flex col-2 CormorantInfant flex-center font-20" href="">EN</a>
-
-				<div class="menu-toggle cursor col-4 flex-center">
+				<a class="lang d-none d-lg-flex col-2 CormorantInfant flex-center font-20 text-hover-brown776356" href="./">EN</a>
+				<div class="menu-toggle cursor col-4 flex-center text-hover-brown776356">
 					<i class="icon-close font-15 mt-1"></i>
 					<span class="d-none d-lg-block font-20 CormorantInfant ml-3">CLOSE</span>
 				</div>
 			</div>
-			<div class="block d-block d-lg-flex flex-center pr-md-4 px-4 mx-3">
-				<div class="d-table d-lg-block mx-auto pt-5 pt-lg-0 mt-2 mt-lg-0">
+			<div class="block d-block d-md-flex flex-center pr-md-4 px-4 mx-3">
+				<div class="d-table d-lg-block mx-auto pt-5 pt-md-0">
 					<ul class="noneStyle text-center text-md-left pb-md-4 pt-lg-2 mt-lg-1">
-						<li class="mb-4 pb-4 pb-md-2">
-							<a href="" class="d-block d-md-flex position-relative">
-								<span class="d-block font-32 text-6D6D6D pl-2 ml-1">LANDMARK 95</span>
+						<li class="mb-md-4 pb-md-2">
+							<a href="landmark" class="d-block d-md-flex position-relative">
+								<span class="d-block font-32 text-6D6D6D pl-3">LANDMARK 95</span>
 								<span class="d-block d-md-inline font-30 font-weight-300 NotoSerifTC">遠雄九五</span>
 							</a>
 						</li>
-						<li class="mb-4 pb-4 pb-md-2">
-							<a href="" class="d-block d-md-flex position-relative">
-								<span class="d-block font-32 text-6D6D6D pl-2 ml-1">AMENITIES</span>
+						<li class="mb-md-4 pb-md-2">
+							<a href="amenities" class="d-block d-md-flex position-relative">
+								<span class="d-block font-32 text-6D6D6D pl-3">AMENITIES</span>
 								<span class="d-block d-md-inline font-30 font-weight-300 NotoSerifTC">高空會所</span>
 							</a>
 						</li>
-						<li class="mb-4 pb-4 pb-md-2">
-							<a href="" class="d-block d-md-flex position-relative">
-								<span class="d-block font-32 text-6D6D6D pl-2 ml-1">RESIDENCE</span>
+						<li class="mb-md-4 pb-md-2">
+							<a href="residence" class="d-block d-md-flex position-relative">
+								<span class="d-block font-32 text-6D6D6D pl-3">RESIDENCE</span>
 								<span class="d-block d-md-inline font-30 font-weight-300 NotoSerifTC">層峰生活</span>
 							</a>
 						</li>
-						<li class="mb-4 pb-4 pb-md-2">
-							<a href="" class="d-block d-md-flex position-relative">
-								<span class="d-block font-32 text-6D6D6D pl-2 ml-1">LOCATION</span>
+						<li class="mb-md-4 pb-md-2">
+							<a href="location" class="d-block d-md-flex position-relative">
+								<span class="d-block font-32 text-6D6D6D pl-3">LOCATION</span>
 								<span class="d-block d-md-inline font-30 font-weight-300 NotoSerifTC">核心區域</span>
 							</a>
 						</li>
@@ -104,7 +102,7 @@
 					<i class="icon-mail flex-center font-15 mr-2 mt-1"></i>
 					<span class="NotoSerifTC">預約賞屋</span>
 				</div>
-				<a class="fb d-flex d-lg-none col-3 flex-center px-0" href="" target="_blank">
+				<a class="fb d-flex d-lg-none col-3 flex-center font-16 px-0" href="" target="_blank">
 					<i class="icon-fb"></i>
 				</a>
 				<a class="lang d-flex d-lg-none col-3 CormorantInfant flex-center font-20 px-0" href="">EN</a>

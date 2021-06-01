@@ -1,4 +1,4 @@
-<div class="d-none d-md-table links text-brown776356 text-center position-absolute z-1">
+<div class="d-none d-md-table links text-center position-absolute z-1">
     <ul class="noneStyle bg-white row mx-0">
         <li class="col-3 px-0">
             <a class="d-block" href="">

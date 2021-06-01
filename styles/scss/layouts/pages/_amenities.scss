@@ -61,12 +61,16 @@
             height: 60px;
             background: white;
             border-radius: 50%;
-            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            transition: all .3s;
             &::after{
                 display: none;
             }
             img{
                 width: 23px;
+            }
+            &:hover{
+                 box-shadow: 0 0 10px rgba(0,0,0,0.4);
             }
             &.swiper-button-prev{
                 left: 18.3%;
@@ -74,14 +78,14 @@
             }
             &.swiper-button-next{
                 right: 18.3%;
-                transform: translateX(-50%,50%);
+                transform: translate(50%,-50%);
             }
         }
         .swiper-pagination{
             display: flex;
             width: auto;
-            left:72.8%;
-            top: 780px;
+            left:72%;
+            top: 733px;
             bottom: auto;
             .swiper-pagination-current{
                 font-size: 46px;
@@ -159,6 +163,7 @@
                 bottom: 0;
                 left: 0;
                 right: 0;
+                transition:  all .3s;
                 &.active{
                     opacity: 1;
                     pointer-events: all;
@@ -172,6 +177,9 @@
                         height: 70px;
                     }
                 }
+            }
+            button.view{
+                display: none;
             }
         }
         .text-lg-right{
@@ -220,15 +228,27 @@
                 }
             }
             .row:nth-child(2){
-                margin-top: 150px;
+                margin-top: 0px;
             }
-            .view-detail .view-btn{
-                pointer-events: all;
-                position: absolute !important;
+            .view-detail{
+                .wrapper{
+                    cursor: initial;
+                }
+                .view-btn{
+                    display: none;
+                }
+               
+            }
+            button.view{
+                display: block;
+                height: 80px;
+                width: 80px;
+            }
+        }
+        .modal{
+            button{
+                top: 24px;
                 right: 24px;
-                bottom: -90px;
-                background-color: $brown !important;
-                color:white;
             }
         }
     }
@@ -305,14 +325,18 @@
                     max-width: initial;
                 }
                 &:nth-child(2){
-                    margin-top: 100px;
+                    margin-top: 48px;
                     img{
                         width: 100%;
                     }
                     
                 }
             }
-
+            button.view{
+                width: 60px;
+                height: 60px;
+                font-size: 16px;
+            }
         }
     }
     @media (max-width:767px){
@@ -331,7 +355,7 @@
         }
         .section-3{
             .row:nth-child(2){
-                margin-top: 50px;
+                margin-top:0px;
             }
             .view-detail{
                 .detail button .rounded-circle{

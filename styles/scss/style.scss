@@ -13,9 +13,30 @@
   font-weight: 700;
 }
 @font-face {
+  font-family: Noto Sans TC;
+  src: url(NotoSansTC-Regular.otf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: Noto Sans TC;
+  src: url(NotoSansTC-Medium.otf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: Noto Sans TC;
+  src: url(NotoSansTC-Bold.otf);
+  font-weight: 700;
+}
+
+@font-face {
   font-family: Noto Serif TC;
   src: url(NotoSerifTC-Regular.otf);
   font-weight: 400;
+}
+@font-face {
+  font-family: Noto Serif TC;
+  src: url(NotoSerifTC-SemiBold.otf);
+  font-weight: 600;
 }
 @font-face {
   font-family: Noto Serif TC;
@@ -47,7 +68,10 @@
 @import 'layouts/_keyframes.scss';
 @import 'layouts/_editor.scss';
 // pages
+@import 'layouts/pages/_index.scss';
 @import 'layouts/pages/_landmark.scss';
 @import 'layouts/pages/_amenities.scss';
 @import 'layouts/pages/_residence.scss';
 @import 'layouts/pages/_location.scss';
+
+@import 'layouts/pages/_indexTest.scss';

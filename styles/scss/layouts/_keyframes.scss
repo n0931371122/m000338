@@ -33,3 +33,22 @@
     transform: none;
   }
 }
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes test {
+  0%{
+     transform: skew(0deg,0deg) translateY(0);
+  }
+  50% {
+    transform: skew(10deg,10deg) translateY(10vh);
+  }
+  100% {
+    transform: skew(0deg,0deg) translateY(0);
+  }
+}

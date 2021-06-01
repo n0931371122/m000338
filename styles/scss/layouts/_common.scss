@@ -22,7 +22,7 @@
         transform: translateY(-50%);
         .font-165{
             letter-spacing: 5px;
-            transition: opacity .3s;
+            transition: all .3s;
             &.hide{
                 opacity: 0;
                 pointer-events: none;
@@ -111,7 +111,7 @@
         display: block;
         pointer-events: none;
         background-size: calc(100%/8);
-        background-image: linear-gradient(90deg, transparent 0px ,transparent calc(100% - 1px) ,red calc(100% - 1px),red 100%);
+        background-image: linear-gradient(90deg, transparent 0px ,transparent calc(100% - 1px) ,#F2F2F2 calc(100% - 1px),#F2F2F2 100%); 
     }
     @media(max-width:1199px){
         &:before{

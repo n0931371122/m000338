@@ -1,5 +1,5 @@
- #residence{
-    .section-1{
+ .editor{
+    .residence-section-1{
         &:before{
             z-index: 0;
         }   
@@ -45,7 +45,7 @@
         }
 
     }
-    .section-2{
+    .residence-section-2{
         height: 1000px;
         img{
             position: fixed;
@@ -56,7 +56,7 @@
             z-index: -1;
         }
     }
-    .section-3{
+    .residence-section-3{
         &::before{
             z-index: 0;
         }
@@ -76,40 +76,40 @@
         }
     }
     @media(max-width:1600px){
-        .section-1 .curtain-wrapper{
+        .residence-section-1 .curtain-wrapper{
             height: 450px;
         }
-        .section-2{
+        .residence-section-2{
             height: 800px;
         }
     }
     @media(max-width:1400px){
-        .section-1 .curtain-wrapper{
+        .residence-section-1 .curtain-wrapper{
             height: 400px;
         }
     }
     @media(max-width:1199px){
-        .section-2{
+        .residence-section-2{
             height: 700px;
 
         }
     }
     @media(max-width:991px){
-        .section-1 .curtain-wrapper{
+        .residence-section-1 .curtain-wrapper{
             height: 300px;
         }
     }
     @media(max-width:767px){
-        .section-1 .curtain-wrapper{
+        .residence-section-1 .curtain-wrapper{
             #curtain #drag-button{
                 width: 50px;
                 height: 50px;
             }
         }
-        .section-2{
+        .residence-section-2{
             height: calc(100vh - 60px);
         }
-        .section-3 .swiper-pagination{
+        .residence-section-3 .swiper-pagination{
             margin-right: -10px;
             .swiper-pagination-bullet{
                     margin: 0 10px;

@@ -7,30 +7,30 @@
 </head>
 
 <body>
-    <div class="wp" id="location" data-target="3">
+    <div class="wp" data-target="3">
         <?php include "header.php"; ?>
         <!-- main ======================================================================================= -->
         <main>
-            <h1 class="hidden">核心區域</h1>
-            <div class="banner bg-black overflow-hidden">
-                <div class="jqimgFill h-100">
-                    <img src="styles/images/location/banner.jpg" alt="">
-                </div>
-                <div class="text text-white position-absolute">
-                    <p class="font-165 lh09 mb-1 mb-sm-0" data-aos="fade-up" data-aos-delay="1000">LOCATION</p>
-                    <p class="NotoSerifTC font-22 font-weight-bold lh14 mb-2 pb-2" data-aos="fade-up" data-aos-delay="1200">立足樞紐，CBD核心中最高點</p>
-                    <div class="flex-align-center pt-3 pt-md-5" data-aos="fade-up" data-aos-delay="1400">
-                        <div class="scrollDown flex-center border-white-3 rounded-circle flex-shrink-0 mr-3">
-                            <i class="icon-down-dir font-12"></i>
-                        </div>
-                        <span class="font-16">SCROLL DOWN</span>
-                    </div>
-                </div>
-                <?php include "links.php"; ?>
-            </div>
             <div class="editor" id="locationEditor">
                 <!--編輯器開始-->
-                <div class="section-1 mask z-1 pt-5">
+                <h1 class="hidden">核心區域</h1>
+                <div class="banner bg-black overflow-hidden">
+                    <div class="jqimgFill h-100">
+                        <img src="styles/images/location/banner.jpg" alt="">
+                    </div>
+                    <div class="text text-white position-absolute">
+                        <p class="font-165 lh09 mb-1 mb-sm-0" data-aos="fade-up" data-aos-delay="1000">LOCATION</p>
+                        <p class="NotoSerifTC font-22 font-weight-bold lh14 mb-2 pb-2" data-aos="fade-up" data-aos-delay="1200">立足樞紐，CBD核心中最高點</p>
+                        <div class="flex-align-center pt-3 pt-md-5" data-aos="fade-up" data-aos-delay="1400">
+                            <div class="scrollDown flex-center border-white-3 rounded-circle flex-shrink-0 mr-3">
+                                <i class="icon-down-dir font-12"></i>
+                            </div>
+                            <span class="font-16">SCROLL DOWN</span>
+                        </div>
+                    </div>
+                    <?php include "links.php"; ?>
+                </div>
+                <div class="location-section-1 mask z-1 pt-5">
                     <div class="row mx-0 pt-lg-5 mt-lg-4 pb-4 pb-md-5 mb-md-3 px-4 px-xl-0">
                         <div class="blank"></div>
                         <div class="col-12 mycol-xl-6 px-0 pt-lg-3">
@@ -61,7 +61,7 @@
                         <div class="blank"></div>
                     </div>
                 </div>
-                <div class="section-2 mask">
+                <div class="location-section-2 mask">
                     <div class="d-none d-lg-flex row dec-block position-absolute w-100 mx-0">
                         <div class="mycol-xl-2"></div>
                         <div class="mycol-xl-6 bg-grayF8F8F8"></div>

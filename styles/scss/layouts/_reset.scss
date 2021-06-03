@@ -259,35 +259,7 @@ input[type="number"] {
 	}
 }
 
-.slick-arrow{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	z-index: 1; 
-	transition: all 0.3s;
-	&.slick-prev {
-		left: 0;
-	}
-	&.slick-next {
-		right: 0;
-	}
-	&::before{
-		display: none;
-	}
-}
-.slick-dots li{
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	button{
-		border-radius: 50%;
-		width: 15px;
-		height: 15px;
-		&::before{
-			display: none;
-		}
-	}
-}
+
 [class^="icon-"]:before, [class*=" icon-"]:before{
 	width: auto;
 	margin: 0;

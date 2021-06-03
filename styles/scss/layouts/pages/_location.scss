@@ -1,5 +1,5 @@
-#location{
-    .section-1{
+.editor{
+    .location-section-1{
         .dec-line{
             &::before,
             &:after{
@@ -23,7 +23,7 @@
             
         }
     }
-    .section-2{
+    .location-section-2{
         margin-top: -254px;
         &::before{
             z-index: 0;
@@ -118,7 +118,7 @@
         }
     }
     @media(max-width:1400px){
-        .section-2{
+        .location-section-2{
             .cursor{
                 display: none;
             }
@@ -145,12 +145,12 @@
         }
     }
     @media(max-width:1199px){
-        .section-1{
+        .location-section-1{
             .max720{
                 max-width: initial;
             }
         }
-        .section-2{
+        .location-section-2{
             margin-top: 0;
             .main-block{
                 padding-top: 50px;
@@ -174,7 +174,7 @@
         }
     }
     @media(max-width:991px){
-        .section-1 .font-26{
+        .location-section-1 .font-26{
            
             border-bottom:1px solid #BCBCBC;
             span{
@@ -191,7 +191,7 @@
                 }
             }
         }
-        .section-2{
+        .location-section-2{
             .swiper-wrapper .text{
                  max-width: initial;
             }
@@ -202,7 +202,7 @@
         }
     }
     @media(max-width:575px){
-        .section-2{
+        .location-section-2{
             .swiper-wrapper .jqimgFill{
                 height: 250px;
             }

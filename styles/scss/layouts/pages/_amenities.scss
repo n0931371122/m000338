@@ -1,5 +1,5 @@
-#amenities{
-    .section-1{
+.editor{
+    .amenities-section-1{
         .dec-block{ 
             height: 960px;
             z-index: -2;
@@ -16,7 +16,7 @@
             z-index: -1;
         }
     }
-    .section-2{
+    .amenities-section-2{
         .jqimgFill{
             height: 710px;
         }
@@ -99,7 +99,7 @@
             }
         }
     }
-    .section-3{
+    .amenities-section-3{
         .dec-line::after{
             content: "";
             position: absolute;
@@ -190,7 +190,7 @@
         }
     }
     @media (max-width:1600px){
-        .section-2 .swiper-button{
+        .amenities-section-2 .swiper-button{
             &.swiper-button-prev{
                 left: 11.5%;
             }
@@ -198,7 +198,7 @@
                 right: 11.5%;
             }          
         }
-        .section-3{
+        .amenities-section-3{
             .row:nth-child(2){
                  margin-top: 80px;
                 .mycol-3>div{
@@ -217,7 +217,7 @@
         }
     }
     @media (max-width:1400px){
-        .section-3{
+        .amenities-section-3{
             .dec-line::after{
                 width: 500px;
             }
@@ -245,7 +245,7 @@
                 width: 80px;
             }
         }
-        .modal{
+        .amenities-modal{
             button{
                 top: 24px;
                 right: 24px;
@@ -253,10 +253,10 @@
         }
     }
     @media (max-width:1199px){
-        .section-1 .dec-block{
+        .amenities-ection-1 .dec-block{
             height: 905px;
         }
-        .section-2{
+        .amenities-section-2{
             .swiper-slide{
                 transform: none;
                 .jqimgFill{
@@ -290,17 +290,17 @@
                 }
             }
         }
-        .section-3{
+        .amenities-section-3{
             .dec-line::after{
                 width: 400px;
             }
         }
     }
     @media (max-width:991px){
-        .section-1 .dec-line::after{
+        .amenities-section-1 .dec-line::after{
             width: 100%;
         }
-        .section-2{
+        .amenities-section-2{
             .swiper-slide .jqimgFill{
                 height: 450px;
             }
@@ -316,7 +316,7 @@
                 top: 470px;
             }
         }
-        .section-3{
+        .amenities-section-3{
             .dec-line::after{
                 width: 100%;
             }
@@ -340,7 +340,7 @@
         }
     }
     @media (max-width:767px){
-        .section-2{
+        .amenities-section-2{
             .swiper-slide .jqimgFill{
                 height: 350px;
             }
@@ -353,7 +353,7 @@
                 height: 35px;
             }
         }
-        .section-3{
+        .amenities-section-3{
             .row:nth-child(2){
                 margin-top:0px;
             }
@@ -374,7 +374,7 @@
         }
     }
     @media (max-width:575px){
-        .section-2{
+        .amenities-section-2{
             .swiper-slide .jqimgFill{
                 height: 200px;
             }   

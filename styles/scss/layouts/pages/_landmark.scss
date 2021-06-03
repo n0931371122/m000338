@@ -1,5 +1,5 @@
-#landmark{
-    .dec-line{
+.editor{
+    .landmark-dec-line{
         &::after{
             content:"";
             position: absolute;
@@ -12,14 +12,14 @@
             z-index: -1;
         }
     }
-    .section-1{
+    .landmark-section-1{
         .dec-block{
             height: 784px;  
             bottom: 5px;
             z-index: -2;
         }
     }
-    .section-2{
+    .landmark-section-2{
         .specialImg{
             &::after{
                 content:"";
@@ -37,7 +37,7 @@
             margin-right: 96px;
         }
     }
-    .section-3{
+    .landmark-section-3{
         padding-bottom: 124px;
         .swiper-slide{
             height: 830px;
@@ -151,7 +151,7 @@
             z-index: -2;
         }
     }
-    .modal{
+    .landmark-modal{
         padding-right: 0 !important;
         .modal-dialog{
             max-width: initial;
@@ -192,25 +192,25 @@
         }
     }
     @media(max-width:1600px){
-        .dec-line{
+        .landmark-dec-line{
             &::after{
                 width: 440px;
             }
         }
-        .section-2 .left-brown-line-dec{
+        .landmark-section-2 .left-brown-line-dec{
            margin-right: 20px;
         }
     }
     @media(max-width:1400px){
-        .dec-line{
+        .landmark-dec-line{
             &::after{
                 width: 350px;
             }
         }
-        .section-1 .dec-block{
+        .landmark-section-1 .dec-block{
             height: 550px;
         }
-        .section-2{
+        .landmark-section-2{
             .specialImg::after{       
                 top: -30px;
                 left: 25px;
@@ -220,7 +220,7 @@
                 margin-right: 0;
             }
         }
-        .section-3{
+        .landmark-section-3{
             .swiper-slide{
                 .img{
                     background-position: left 35% center;
@@ -238,15 +238,15 @@
         }
     }
     @media(max-width:1199px){
-        .dec-line{
+        .landmark-dec-line{
             &::after{
                 width: 100%;
             }
         }
-        .section-1 .dec-block{
+        .landmark-section-1 .dec-block{
             height: 413px;
         }
-        .section-3{
+        .landmark-section-3{
             padding-bottom: 50px;
             .swiper-slide{
                 .img{
@@ -295,7 +295,7 @@
                 }
             }
         }
-        .modal .modal-dialog{
+       .landmark-modal .modal-dialog{
             height: auto;
             .jqimgFill{
                 background: initial;
@@ -303,10 +303,10 @@
                     display: block !important;
                 }
             }
-        }
+        } 
     }
     @media(max-width:991px){
-        .section-1{
+        .landmark-section-1{
             &::after{
                 content:"";
                 display: block;
@@ -319,12 +319,12 @@
                 z-index: -1;
             }
         }
-        .section-2 .specialImg::after{
+        .landmark-section-2 .specialImg::after{
             left: 20px;
             top: -20px;
             height: calc(100% + 40px);
         }
-        .section-3{
+        .landmark-section-3{
             background: $grayF8F8F8;
             .swiper-slide{
                 height: auto;
@@ -360,7 +360,7 @@
         }
     }
     @media(max-width:767px){
-        .section-3{
+        .landmark-section-3{
             .dots-block{
                 top: 386px;
             }
@@ -401,10 +401,11 @@
         }
     }
     @media(max-width:575px){
-        .section-1{
+        .landmark-section-1{
             &::after{
                 height: 200px;
             }
         }
-    } 
+    }  
 }
+

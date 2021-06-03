@@ -1,9 +1,6 @@
 
 
 //字型 相關
-.Heebo{
-  font-family: "Heebo";
-}
 .NotoSansTC{
   font-family: Noto Sans TC;
 }
@@ -16,8 +13,7 @@
 .Roboto{
  font-family:  Roboto;
 }
-// height  相關{
- 
+
 //width 相關
 .max415{
   max-width: 415px;
@@ -39,6 +35,13 @@
 }
 .max580{
   max-width: 580px;
+  margin: auto;
+}
+.max590{
+  max-width: 590px;
+}
+.max640{
+  max-width: 640px;
   margin: auto;
 }
 .max720{
@@ -79,18 +82,6 @@
 .lh165{
   line-height: 1.65;
 }
-//max-width 相關
-.max590{
-  max-width: 590px;
-}
-.max640{
-  max-width: 640px;
-  margin: auto;
-}
-.max1640{
-  max-width: 1640px;
-  margin: auto;
-}
 
 //z-index 相關
 
@@ -103,10 +94,7 @@
 .z-3{
   z-index: 3;
 }
-.z-4{
-  z-index: 4;
-}
-//line-height 相關
+
 
 //overflow 相關
 .overflow-hidden{
@@ -148,9 +136,7 @@
 .font-weight-600{
   font-weight: 600;
 }
-.font-weight-bold{
-  font-weight: 700;
-}
+
 //color 相關
 .text-black{
   color:black;
@@ -195,16 +181,6 @@
 }
 .border-bottom-BCBCBC{
   border-bottom:1px solid #BCBCBC;
-}
-// rounded 相關
-.rounded-5{
-  border-radius: 5px;
-}
-.rounded-10{
-  border-radius: 10px;
-}
-.rounded-15{
-  border-radius: 15px;
 }
 
 

@@ -7,33 +7,33 @@
 </head>
 
 <body>
-    <div class="wp  banner-text-hide" id="landmark" data-target="0">
+    <div class="wp  banner-text-hide" data-target="0">
         <?php include "header.php"; ?>
         <!-- main ======================================================================================= -->
         <main>
-            <h1 class="hidden">遠雄九五</h1>
-            <div class="banner bg-black overflow-hidden">
-                <!-- <video class="w-100 h-100" autoplay muted loop>
-                    <source src="styles/videos/1.mp4" type="video/mp4">
-                </video> -->
-                <div class="jqimgFill h-100">
-                    <img src="styles/images/landmark/banner.jpg" alt="">
-                </div>
-                <div class="text text-white position-absolute">
-                    <p class="font-165 lh09 mb-1 mb-sm-0" data-aos="fade-up" data-aos-delay="1000">LANDMARK95</p>
-                    <p class="NotoSerifTC font-22 font-weight-bold lh14 mb-2 pb-2" data-aos="fade-up" data-aos-delay="1200">永恆地標，超越時間限制的時代印記</p>
-                    <div class="flex-align-center pt-3 pt-md-5" data-aos="fade-up" data-aos-delay="1400">
-                        <div class="scrollDown flex-center border-white-3 rounded-circle flex-shrink-0 mr-3">
-                            <i class="icon-down-dir font-12"></i>
-                        </div>
-                        <span class="font-16">SCROLL DOWN</span>
-                    </div>
-                </div>
-                <?php include "links.php"; ?>
-            </div>
             <div class="editor" id="landmarkEditor">
                 <!--編輯器開始-->
-                <div class="section-1 mask pt-4 pt-sm-5 mt-3 mt-sm-0">
+                <h1 class="hidden">遠雄九五</h1>
+                <div class="banner bg-black overflow-hidden">
+                    <video class="d-table h-100 w-100 mx-auto" autoplay muted loop playsinline>
+                        <source src="styles/videos/1.mp4" type="video/mp4">
+                    </video>
+                    <!-- <div class="jqimgFill h-100">
+                        <img src="styles/images/landmark/banner.jpg" alt="">
+                    </div> -->
+                    <div class="text text-white position-absolute">
+                        <p class="font-165 lh09 mb-1 mb-sm-0" data-aos="fade-up" data-aos-delay="1000">LANDMARK95</p>
+                        <p class="NotoSerifTC font-22 font-weight-bold lh14 mb-2 pb-2" data-aos="fade-up" data-aos-delay="1200">永恆地標，超越時間限制的時代印記</p>
+                        <div class="flex-align-center pt-3 pt-md-5" data-aos="fade-up" data-aos-delay="1400">
+                            <div class="scrollDown flex-center border-white-3 rounded-circle flex-shrink-0 mr-3">
+                                <i class="icon-down-dir font-12"></i>
+                            </div>
+                            <span class="font-16">SCROLL DOWN</span>
+                        </div>
+                    </div>
+                    <?php include "links.php"; ?>
+                </div>
+                <div class="landmark-section-1 mask pt-4 pt-sm-5 mt-3 mt-sm-0">
                     <div class="position-relative">
                         <div class="d-none d-lg-flex row dec-block position-absolute w-100 mx-0">
                             <div class="mycol-6 bg-grayF8F8F8"></div>
@@ -44,7 +44,7 @@
                                 <div class="blank"></div>
                                 <div class="col-12 mycol-lg-3 mycol-xl-2 z-1 pl-0 pr-0 pr-lg-4 pb-4 pb-md-0">
                                     <p class="font-65 lh1 mb-1" data-aos="fade-right">No.1 Brand as the Industry Leader</p>
-                                    <p class="NotoSerifTC font-26 font-weight-bold text-brown776356 dec-line position-relative mb-2 mb-xl-3" data-aos="fade-right" data-aos-delay="100">
+                                    <p class="NotoSerifTC font-26 font-weight-bold text-brown776356 landmark-dec-line position-relative mb-2 mb-xl-3" data-aos="fade-right" data-aos-delay="100">
                                         <span class="d-table border-bottom-brown776356 pb-4 pb-xl-5">領先業界 第一品牌</span>
                                     </p>
                                     <div class="font-20 lh165 pt-4 mt-xl-4 pb-xl-5" data-aos="fade-right" data-aos-delay="200">
@@ -65,7 +65,7 @@
 
                     </div>
                 </div>
-                <div class="section-2 mask pt-5 pb-5 pb-lg-0 mb-3 mb-lg-0">
+                <div class="landmark-section-2 mask pt-5 pb-5 pb-lg-0 mb-3 mb-lg-0">
                     <div class="pt-xl-5 px-4 px-xl-0">
                         <p class="font-65 max640 text-lg-center lh1 pt-md-4 mt-sm-2 mb-2 mb-lg-3 ml-0 ml-lg-auto" data-aos="fade-up">Exquisite Architecture asEnduring Legacy</p>
                         <p class="font-26 NotoSerifTC font-weight-bold text-brown776356 text-lg-center" data-aos="fade-up" data-aos-delay="100">精工建築 傳世典範</p>
@@ -105,7 +105,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="section-3 position-relative mask pt-5">
+                <div class="landmark-section-3 position-relative mask pt-5">
                     <div class="d-none d-xl-flex row dec-block position-absolute w-100 mx-0">
                         <div class="mycol-4"></div>
                         <div class="mycol-4 bg-grayF8F8F8"></div>
@@ -221,93 +221,97 @@
             </div>
         </main>
         <!-- main ======================================================================================= -->
-        <!-- Modal -->
-        <div class="modal fade" id="person-1" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered p-4 p-xl-0" role="document">
-                <div class="modal-content les1">
-                    <div class="row h-100 mx-0">
-                        <div class="col-12 col-xl-9 h-100 px-0">
-                            <div class="jqimgFill h-100">
-                                <img src="styles/images/landmark/modal-1.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="col-12 col-xl-3 d-xl-flex px-4 px-xl-5 pt-4">
-                            <div class="position-relative mx-xl-4 pt-md-5 mt-xl-5 pb-4 pb-md-5 pb-xl-0">
-                                <div>
-                                    <div class="bottom-dec pb-2 pb-md-4 mb-2 mb-md-4">
-                                        <span class="d-block NotoSerifTC font-36 font-weight-bold mb-1">地標建築師</span>
-                                        <span class="d-block font-20">台北101</span>
-                                    </div>
-                                    <p class="text-6D6D6D lh165 mb-0 mb-md-4 pb-3">每一件作品都是人生截至那個時間點的累積，101的樣子，說不定我已經想了一輩子。</p>
-                                    <img style="width:90px;" src="styles/images/landmark/signature-1.svg" alt="">
+        <div class="editor" id="landmarkModalEditor">
+            <!--編輯器開始-->
+            <!-- Modal -->
+            <div class="landmark-modal modal fade" id="person-1" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered p-4 p-xl-0" role="document">
+                    <div class="modal-content les1">
+                        <div class="row h-100 mx-0">
+                            <div class="col-12 col-xl-9 h-100 px-0">
+                                <div class="jqimgFill h-100">
+                                    <img src="styles/images/landmark/modal-1.jpg" alt="">
                                 </div>
-                                <button type="button" class="back position-xl-absolute text-hover-brown776356 mt-4 mt-md-5 mt-xl-0" data-dismiss="modal">
-                                    <i class="icon-left mr-3"></i>
-                                    <span>回大師介紹</span>
-                                </button>
+                            </div>
+                            <div class="col-12 col-xl-3 d-xl-flex px-4 px-xl-5 pt-4">
+                                <div class="position-relative mx-xl-4 pt-md-5 mt-xl-5 pb-4 pb-md-5 pb-xl-0">
+                                    <div>
+                                        <div class="bottom-dec pb-2 pb-md-4 mb-2 mb-md-4">
+                                            <span class="d-block NotoSerifTC font-36 font-weight-bold mb-1">地標建築師</span>
+                                            <span class="d-block font-20">台北101</span>
+                                        </div>
+                                        <p class="text-6D6D6D lh165 mb-0 mb-md-4 pb-3">每一件作品都是人生截至那個時間點的累積，101的樣子，說不定我已經想了一輩子。</p>
+                                        <img style="width:90px;" src="styles/images/landmark/signature-1.svg" alt="">
+                                    </div>
+                                    <button type="button" class="back position-xl-absolute text-hover-brown776356 mt-4 mt-md-5 mt-xl-0" data-dismiss="modal">
+                                        <i class="icon-left mr-3"></i>
+                                        <span>回大師介紹</span>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="modal fade" id="person-2" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered p-4 p-xl-0" role="document">
-                <div class="modal-content les1">
-                    <div class="row h-100 mx-0">
-                        <div class="col-12 col-xl-9 h-100 px-0">
-                            <div class="jqimgFill h-100">
-                                <img src="styles/images/landmark/modal-2.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="col-12 col-xl-3 d-xl-flex px-4 px-xl-5 pt-4">
-                            <div class="position-relative mx-xl-4 pt-md-5 mt-xl-5 pb-4 pb-md-5 pb-xl-0">
-                                <div>
-                                    <div class="bottom-dec pb-2 pb-md-4 mb-2 mb-md-4">
-                                        <span class="d-block NotoSerifTC font-36 font-weight-bold mb-1">國際燈光藝術大師</span>
-                                        <span class="d-block font-20">北京奧運鳥巢</span>
-                                    </div>
-                                    <p class="text-6D6D6D lh165 mb-0 mb-md-4 pb-3">建築沒有了光，就沒有生命，光帶給人的感覺，是從回家的那一刻開始，象徵著城市的生命力。</p>
-                                    <img style="width:90px;" src="styles/images/landmark/signature-2.svg" alt="">
+            <div class="landmark-modal modal fade" id="person-2" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered p-4 p-xl-0" role="document">
+                    <div class="modal-content les1">
+                        <div class="row h-100 mx-0">
+                            <div class="col-12 col-xl-9 h-100 px-0">
+                                <div class="jqimgFill h-100">
+                                    <img src="styles/images/landmark/modal-2.jpg" alt="">
                                 </div>
-                                <button type="button" class="back position-xl-absolute text-hover-brown776356 mt-4 mt-md-5 mt-xl-0" data-dismiss="modal">
-                                    <i class="icon-left mr-3"></i>
-                                    <span>回大師介紹</span>
-                                </button>
+                            </div>
+                            <div class="col-12 col-xl-3 d-xl-flex px-4 px-xl-5 pt-4">
+                                <div class="position-relative mx-xl-4 pt-md-5 mt-xl-5 pb-4 pb-md-5 pb-xl-0">
+                                    <div>
+                                        <div class="bottom-dec pb-2 pb-md-4 mb-2 mb-md-4">
+                                            <span class="d-block NotoSerifTC font-36 font-weight-bold mb-1">國際燈光藝術大師</span>
+                                            <span class="d-block font-20">北京奧運鳥巢</span>
+                                        </div>
+                                        <p class="text-6D6D6D lh165 mb-0 mb-md-4 pb-3">建築沒有了光，就沒有生命，光帶給人的感覺，是從回家的那一刻開始，象徵著城市的生命力。</p>
+                                        <img style="width:90px;" src="styles/images/landmark/signature-2.svg" alt="">
+                                    </div>
+                                    <button type="button" class="back position-xl-absolute text-hover-brown776356 mt-4 mt-md-5 mt-xl-0" data-dismiss="modal">
+                                        <i class="icon-left mr-3"></i>
+                                        <span>回大師介紹</span>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="modal fade" id="person-3" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered p-4 p-xl-0" role="document">
-                <div class="modal-content les1">
-                    <div class="row h-100 mx-0">
-                        <div class="col-12 col-xl-9 h-100 px-0">
-                            <div class="jqimgFill h-100">
-                                <img src="styles/images/landmark/modal-3.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="col-12 col-xl-3 d-xl-flex px-4 px-xl-5 pt-4">
-                            <div class="position-relative mx-xl-4 pt-md-5 mt-xl-5 pb-4 pb-md-5 pb-xl-0">
-                                <div>
-                                    <div class="bottom-dec pb-2 pb-md-4 mb-2 mb-md-4">
-                                        <span class="d-block NotoSerifTC font-36 font-weight-bold mb-1">豪宅空間設計權威</span>
-                                        <span class="d-block font-20">遠雄九五</span>
-                                    </div>
-                                    <p class="text-6D6D6D lh165 mb-0 mb-md-4 pb-3">以豐富經驗完美詮釋豪宅空間，滿足金字塔頂端挑剔的需求，為台灣豪宅刻下一段段深厚底蘊的品味故事。</p>
-                                    <img style="width:90px;" src="styles/images/landmark/signature-3.svg" alt="">
+            <div class="landmark-modal modal fade" id="person-3" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered p-4 p-xl-0" role="document">
+                    <div class="modal-content les1">
+                        <div class="row h-100 mx-0">
+                            <div class="col-12 col-xl-9 h-100 px-0">
+                                <div class="jqimgFill h-100">
+                                    <img src="styles/images/landmark/modal-3.jpg" alt="">
                                 </div>
-                                <button type="button" class="back position-xl-absolute text-hover-brown776356 mt-4 mt-md-5 mt-xl-0" data-dismiss="modal">
-                                    <i class="icon-left mr-3"></i>
-                                    <span>回大師介紹</span>
-                                </button>
+                            </div>
+                            <div class="col-12 col-xl-3 d-xl-flex px-4 px-xl-5 pt-4">
+                                <div class="position-relative mx-xl-4 pt-md-5 mt-xl-5 pb-4 pb-md-5 pb-xl-0">
+                                    <div>
+                                        <div class="bottom-dec pb-2 pb-md-4 mb-2 mb-md-4">
+                                            <span class="d-block NotoSerifTC font-36 font-weight-bold mb-1">豪宅空間設計權威</span>
+                                            <span class="d-block font-20">遠雄九五</span>
+                                        </div>
+                                        <p class="text-6D6D6D lh165 mb-0 mb-md-4 pb-3">以豐富經驗完美詮釋豪宅空間，滿足金字塔頂端挑剔的需求，為台灣豪宅刻下一段段深厚底蘊的品味故事。</p>
+                                        <img style="width:90px;" src="styles/images/landmark/signature-3.svg" alt="">
+                                    </div>
+                                    <button type="button" class="back position-xl-absolute text-hover-brown776356 mt-4 mt-md-5 mt-xl-0" data-dismiss="modal">
+                                        <i class="icon-left mr-3"></i>
+                                        <span>回大師介紹</span>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!--編輯器結束-->
         </div>
         <?php include "footer.php"; ?>
     </div>

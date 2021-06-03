@@ -7,33 +7,33 @@
 </head>
 
 <body>
-    <div class="wp banner-text-hide" id="residence" data-target="2">
+    <div class="wp banner-text-hide" data-target="2">
         <?php include "header.php"; ?>
         <!-- main ======================================================================================= -->
         <main>
-            <h1 class="hidden">層峰生活</h1>
-            <div class="banner bg-black overflow-hidden">
-                <!-- <video class="w-100 h-100" autoplay muted loop>
-                    <source src="styles/videos/1.mp4" type="video/mp4">
-                </video> -->
-                <div class="jqimgFill h-100">
-                    <img src="styles/images/residence/banner.jpg" alt="">
-                </div>
-                <div class="text text-white position-absolute">
-                    <p class="font-165 lh09 mb-1 mb-sm-0" data-aos="fade-up" data-aos-delay="1000">RESIDENCE</p>
-                    <p class="NotoSerifTC font-22 font-weight-bold lh14 mb-2 pb-2" data-aos="fade-up" data-aos-delay="1200">悠然境界，凌駕於上的生活享受</p>
-                    <div class="flex-align-center pt-3 pt-md-5" data-aos="fade-up" data-aos-delay="1400">
-                        <div class="scrollDown flex-center border-white-3 rounded-circle flex-shrink-0 mr-3">
-                            <i class="icon-down-dir font-12"></i>
-                        </div>
-                        <span class="font-16">SCROLL DOWN</span>
-                    </div>
-                </div>
-                <?php include "links.php"; ?>
-            </div>
             <div class="editor" id="residenceEditor">
                 <!--編輯器開始-->
-                <div class="section-1 mask text-center bg-white pb-5 pt-5">
+                <h1 class="hidden">層峰生活</h1>
+                <div class="banner bg-black overflow-hidden">
+                    <!-- <video class="w-100 h-100" autoplay muted loop>
+                    <source src="styles/videos/1.mp4" type="video/mp4">
+                    </video> -->
+                    <div class="jqimgFill h-100">
+                        <img src="styles/images/residence/banner.jpg" alt="">
+                    </div>
+                    <div class="text text-white position-absolute">
+                        <p class="font-165 lh09 mb-1 mb-sm-0" data-aos="fade-up" data-aos-delay="1000">RESIDENCE</p>
+                        <p class="NotoSerifTC font-22 font-weight-bold lh14 mb-2 pb-2" data-aos="fade-up" data-aos-delay="1200">悠然境界，凌駕於上的生活享受</p>
+                        <div class="flex-align-center pt-3 pt-md-5" data-aos="fade-up" data-aos-delay="1400">
+                            <div class="scrollDown flex-center border-white-3 rounded-circle flex-shrink-0 mr-3">
+                                <i class="icon-down-dir font-12"></i>
+                            </div>
+                            <span class="font-16">SCROLL DOWN</span>
+                        </div>
+                    </div>
+                    <?php include "links.php"; ?>
+                </div>
+                <div class="residence-section-1 mask text-center bg-white pb-5 pt-5">
                     <div class="py-md-5 my-xl-5">
                         <div class="px-4 px-xl-0">
                             <p class="font-65 lh1 mb-2 pt-2" data-aos="fade-up">The Best View in Northern Tawiwan</p>
@@ -71,7 +71,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="section-2 position-relative">
+                <div class="residence-section-2 position-relative">
                     <img src="styles/images/residence/bg.jpg" alt="">
                     <div class="text-white absolute-center text-center w-100 px-4 pb-4">
                         <p class="font-88 lh1 mb-0" data-aos="fade-up">Unencumbered Leisure</p>
@@ -82,7 +82,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="section-3 mask bg-white pt-5 pb-5">
+                <div class="residence-section-3 mask bg-white pt-5 pb-5">
                     <div class="row mx-0 px-4 px-xl-0 pb-lg-4 mb-2 pt-md-4 pt-lg-5 mt-xl-5">
                         <div class="blank"></div>
                         <div class="col-12 col-lg-8 mycol-xl-4 px-0">

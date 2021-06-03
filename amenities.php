@@ -7,30 +7,30 @@
 </head>
 
 <body>
-    <div class="wp" id="amenities" data-target="1">
+    <div class="wp" data-target="1">
         <?php include "header.php"; ?>
         <!-- main ======================================================================================= -->
         <main>
-            <h1 class="hidden">高空會所</h1>
-            <div class="banner bg-black overflow-hidden">
-                <div class="jqimgFill h-100">
-                    <img src="styles/images/amenities/banner.jpg" alt="">
-                </div>
-                <div class="text text-white position-absolute">
-                    <p class="font-165 lh09 mb-1 mb-sm-0" data-aos="fade-up" data-aos-delay="1000">AMENITIES</p>
-                    <p class="NotoSerifTC font-22 font-weight-bold lh14 mb-2 pb-2" data-aos="fade-up" data-aos-delay="1200">專屬排場，絕無僅有的層峰體驗</p>
-                    <div class="flex-align-center pt-3 pt-md-5" data-aos="fade-up" data-aos-delay="1400">
-                        <div class="scrollDown flex-center border-white-3 rounded-circle flex-shrink-0 mr-3">
-                            <i class="icon-down-dir font-12"></i>
-                        </div>
-                        <span class="font-16">SCROLL DOWN</span>
-                    </div>
-                </div>
-                <?php include "links.php"; ?>
-            </div>
             <div class="editor" id="amenitiesEditor">
                 <!--編輯器開始-->
-                <div class="section-1 mask pt-4 pt-sm-5 mt-3 mt-sm-0">
+                <h1 class="hidden">高空會所</h1>
+                <div class="banner bg-black overflow-hidden">
+                    <div class="jqimgFill h-100">
+                        <img src="styles/images/amenities/banner.jpg" alt="">
+                    </div>
+                    <div class="text text-white position-absolute">
+                        <p class="font-165 lh09 mb-1 mb-sm-0" data-aos="fade-up" data-aos-delay="1000">AMENITIES</p>
+                        <p class="NotoSerifTC font-22 font-weight-bold lh14 mb-2 pb-2" data-aos="fade-up" data-aos-delay="1200">專屬排場，絕無僅有的層峰體驗</p>
+                        <div class="flex-align-center pt-3 pt-md-5" data-aos="fade-up" data-aos-delay="1400">
+                            <div class="scrollDown flex-center border-white-3 rounded-circle flex-shrink-0 mr-3">
+                                <i class="icon-down-dir font-12"></i>
+                            </div>
+                            <span class="font-16">SCROLL DOWN</span>
+                        </div>
+                    </div>
+                    <?php include "links.php"; ?>
+                </div>
+                <div class="amenities-section-1 mask pt-4 pt-sm-5 mt-3 mt-sm-0">
                     <div class="pt-lg-5 mt-lg-3">
                         <div class="d-none d-lg-flex row dec-block position-absolute w-100 mx-0 pt-5 mt-4">
                             <div class="mycol-lg-3 mycol-xl-4 bg-grayF8F8F8"></div>
@@ -78,7 +78,7 @@
 
                     </div>
                 </div>
-                <div class="section-2 mask pt-5 pb-xl-2" data-aos="fade-up">
+                <div class="amenities-section-2 mask pt-5 pb-xl-2" data-aos="fade-up">
                     <div class="pb-lg-4 pt-lg-5 mb-5">
                         <div class="swiper-container">
                             <div class="swiper-wrapper">
@@ -143,7 +143,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="section-3 mask pt-xl-5 pb-5">
+                <div class="amenities-section-3 mask pt-xl-5 pb-5">
                     <div class="pb-xl-4 mb-xl-2">
                         <div class="d-block d-lg-flex row mx-0">
                             <div class="mycol-lg-3 z-1 pl-4 pl-lg-0 pr-4 pr-xl-5">
@@ -222,26 +222,30 @@
             </div>
         </main>
         <!-- main ======================================================================================= -->
-        <!-- Modal -->
-        <div class="modal fade" id="view-1" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered max960 p-4 p-xl-0" role="document">
-                <div class="modal-content p-2">
-                    <button type="button" class="text-white position-absolute" data-dismiss="modal">
-                        <i class="icon-close"></i>
-                    </button>
-                    <img src="styles/images/amenities/img-2-detail.jpg" alt="">
+        <div class="editor" id="amenitiesModalEditor">
+            <!--編輯器開始-->
+            <!-- Modal -->
+            <div class="amenities-modal modal fade" id="view-1" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered max960 p-4 p-xl-0" role="document">
+                    <div class="modal-content p-2">
+                        <button type="button" class="text-white position-absolute" data-dismiss="modal">
+                            <i class="icon-close"></i>
+                        </button>
+                        <img src="styles/images/amenities/img-2-detail.jpg" alt="">
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="modal fade" id="view-2" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered max960 p-4 p-xl-0" role="document">
-                <div class="modal-content p-2">
-                    <button type="button" class="text-white position-absolute" data-dismiss="modal">
-                        <i class="icon-close"></i>
-                    </button>
-                    <img src="styles/images/amenities/img-3-detail.jpg" alt="">
+            <div class="amenities-modal modal fade" id="view-2" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered max960 p-4 p-xl-0" role="document">
+                    <div class="modal-content p-2">
+                        <button type="button" class="text-white position-absolute" data-dismiss="modal">
+                            <i class="icon-close"></i>
+                        </button>
+                        <img src="styles/images/amenities/img-3-detail.jpg" alt="">
+                    </div>
                 </div>
             </div>
+            <!--編輯器結束-->
         </div>
         <?php include "footer.php"; ?>
     </div>

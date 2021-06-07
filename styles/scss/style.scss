@@ -4,57 +4,6 @@
 @import url('scss/plugins/aos.css'); 
 @import url('font/css/fontello.css'); 
 // config
-@font-face {
-  font-family: Cormorant Infant;
-  src: url(CormorantInfant-Bold.ttf);
-  font-weight: 700;
-}
-@font-face {
-  font-family: Noto Sans TC;
-  src: url(NotoSansTC-Regular.otf);
-  font-weight: 400;
-}
-@font-face {
-  font-family: Noto Sans TC;
-  src: url(NotoSansTC-Medium.otf);
-  font-weight: 500;
-}
-@font-face {
-  font-family: Noto Sans TC;
-  src: url(NotoSansTC-Bold.otf);
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: Noto Serif TC;
-  src: url(NotoSerifTC-Regular.otf);
-  font-weight: 400;
-}
-@font-face {
-  font-family: Noto Serif TC;
-  src: url(NotoSerifTC-SemiBold.otf);
-  font-weight: 600;
-}
-@font-face {
-  font-family: Noto Serif TC;
-  src: url(NotoSerifTC-Bold.otf);
-  font-weight: 700;
-}
-@font-face {
-  font-family: Amiri;
-  src: url(Amiri-Regular.ttf);
-  font-weight: 400;
-}
-@font-face {
-  font-family: Amiri;
-  src: url(Amiri-Bold.ttf);
-  font-weight: 700;
-}
-@font-face {
-  font-family: Roboto;
-  src: url(Roboto-Regular.ttf);
-  font-weight: 400;
-}
 @import 'config/_variable.scss';
 @import 'config/_config.scss';
 @import 'config/_fontSize.scss';

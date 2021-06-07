@@ -1,7 +1,8 @@
 html{
-	&.menuOpen{	
+	&.menuOpen{	 
 		.menu{
-			right: 0;
+			opacity: 1;
+			pointer-events: all;
 		}
 		header{
 			.reservation{
@@ -12,6 +13,7 @@ html{
 		.mask{
 			opacity: 1;
 			pointer-events: all;
+
 		}
 	}
 	&.headerHideMode{
@@ -62,7 +64,8 @@ html{
 	}
 	@media(max-width:991px){
 		&.menuOpen{
-			 overflow: hidden;
+		 	overflow: hidden;
+			-webkit-overflow-scrolling: touch;
 			header{
 				.logo{
 					color:black;
@@ -89,18 +92,36 @@ html{
 							display: block;
 						}
 					}
-
-					
 				}
 			}
 		}
 	}
+    @media (max-width:991px) and (orientation:landscape){
+       .block>div{
+		   padding-top: 260px !important;
+		   min-height: 500px;
+		   a>span:nth-child(1){
+			   margin-top: 5px;
+		   }
+	   }
+    }
+    @media (max-width:767px) and (orientation:landscape){
+       .block>div{
+		   padding-top: 30px !important;
+	   }
+    }
 }
 header{
 	color:white;
 	height: 90px;
 	border-bottom:1px solid rgba(255,255,255,0.08);
 	transition: all .3s;
+	&.menuHoverMode{
+		.menu ul li a{
+			color:#6D6D6D;
+			opacity: 0.5;
+		}
+	}
 	.menu-toggle{
 		img{
 			&:nth-child(2){
@@ -120,10 +141,12 @@ header{
 	}
 	.menu{
 		top:0px;
-		right: -714px;
+		right: 0;
 		width: 37.5%;
-		height:100vh;
-		transition: right .3s; 
+		bottom: 0;
+		transition: all .3s; 
+		opacity: 0;
+		pointer-events: none;
 		.menu-toggle,
 		.reservation,
 		.line,
@@ -140,6 +163,7 @@ header{
 			overflow-y: auto;
 			ul li a{
 				padding: 2px 0;
+				transition: all .3s;
 				&:before{
 					content:"";
 					display: block;
@@ -154,6 +178,7 @@ header{
 					transition: all .3s;
 				}
 				&:hover{
+					opacity: 1;
 					&:before{
 						opacity: 1;
 						transform: translate(0px,-50%);
@@ -184,10 +209,14 @@ header{
 		top: 0;
 		left: 0;
 		bottom: 0;
-		right: 0;
+		right: 37.5%;
 		background: rgba(0,0,0,0.3);
 		pointer-events: none;
 		opacity: 0;
+		transition: opacity .3s;
+		&::before{
+			display: none;
+		}
 	}
 	@media(max-width:1199px){
 		.menu{
@@ -201,7 +230,6 @@ header{
 		height: 60px;
 		.menu{
 			width: 100%;
-			right: -100%;
 			.row{
 				height: 60px;
 			}
@@ -240,17 +268,29 @@ header{
 			flex:0 0 60px;
 			border-left: 1px solid rgba(255, 255, 255, 0.08);
 		}
+		.mask{
+			display: none;
+		}
 
 	}
 	@media(max-width:767px){
 		.block>div{
 			height: 100%;
 			ul{
-				height: calc(100% - 156px);
+				height: calc(100% - 132px);
 			}
 		}
-		.menu li{
-			height: calc(100% / 4);
+		.menu{
+			.block{
+				    height: calc(100% - 140px);
+			}
+			li{
+				height: calc(100% / 4);
+				min-height: 80px;
+			}
+			.row{
+				height: 70px;
+			}
 		}
 	}
 	@media(max-width:350px){

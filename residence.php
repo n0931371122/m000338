@@ -18,8 +18,8 @@
                     <!-- <video class="w-100 h-100" autoplay muted loop>
                     <source src="styles/videos/1.mp4" type="video/mp4">
                     </video> -->
-                    <div class="jqimgFill h-100">
-                        <img src="styles/images/residence/banner.jpg" alt="">
+                    <div class="jqimgFill">
+                        <img src="styles/images/residence/banner.jpg" alt="遠雄九五">
                     </div>
                     <div class="text text-white position-absolute">
                         <p class="font-165 lh09 mb-1 mb-sm-0" data-aos="fade-up" data-aos-delay="1000">RESIDENCE</p>
@@ -72,7 +72,7 @@
                     </div>
                 </div>
                 <div class="residence-section-2 position-relative">
-                    <img src="styles/images/residence/bg.jpg" alt="">
+                    <img src="styles/images/residence/bg.jpg" alt="遠雄九五">
                     <div class="text-white absolute-center text-center w-100 px-4 pb-4">
                         <p class="font-88 lh1 mb-0" data-aos="fade-up">Unencumbered Leisure</p>
                         <p class="NotoSerifTC font-36 font-weight-bold" data-aos="fade-up" data-aos-delay="50">夢幻地標，凌駕於上的生活享受</p>
@@ -97,10 +97,10 @@
                             <div class="swiper-container" data-aos="fade-up" data-aos-delay="100">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                        <img src="styles/images/residence/1-1.jpg" alt="">
+                                        <img src="styles/images/residence/1-1.jpg" alt="遠雄九五">
                                     </div>
                                     <div class="swiper-slide">
-                                        <img src="styles/images/residence/1-2.jpg" alt="">
+                                        <img src="styles/images/residence/1-2.jpg" alt="遠雄九五">
                                     </div>
                                 </div>
                                 <div class="swiper-pagination position-static d-table ml-auto w-auto pt-2 pt-md-3">
@@ -118,10 +118,10 @@
                             <div class="swiper-container" data-aos="fade-up" data-aos-delay="100">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                        <img src="styles/images/residence/2-1.jpg" alt="">
+                                        <img src="styles/images/residence/2-1.jpg" alt="遠雄九五">
                                     </div>
                                     <div class="swiper-slide">
-                                        <img src="styles/images/residence/2-2.jpg" alt="">
+                                        <img src="styles/images/residence/2-2.jpg" alt="遠雄九五">
                                     </div>
                                 </div>
                                 <div class="swiper-pagination position-static d-table ml-auto w-auto pt-2 pt-md-3">
@@ -137,10 +137,10 @@
                             <div class="swiper-container" data-aos="fade-up" data-aos-delay="100">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                        <img src="styles/images/residence/3-1.jpg" alt="">
+                                        <img src="styles/images/residence/3-1.jpg" alt="遠雄九五">
                                     </div>
                                     <div class="swiper-slide">
-                                        <img src="styles/images/residence/3-2.jpg" alt="">
+                                        <img src="styles/images/residence/3-2.jpg" alt="遠雄九五">
                                     </div>
                                 </div>
                                 <div class="swiper-pagination position-static d-table ml-auto w-auto pt-2 pt-md-3">
@@ -157,10 +157,10 @@
                             <div class="swiper-container" data-aos="fade-up" data-aos-delay="100">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                        <img src="styles/images/residence/4-1.jpg" alt="">
+                                        <img src="styles/images/residence/4-1.jpg" alt="遠雄九五">
                                     </div>
                                     <div class="swiper-slide">
-                                        <img src="styles/images/residence/4-2.jpg" alt="">
+                                        <img src="styles/images/residence/4-2.jpg" alt="遠雄九五">
                                     </div>
                                 </div>
                                 <div class="swiper-pagination position-static d-table ml-auto w-auto pt-2 pt-md-3">
@@ -176,10 +176,10 @@
                             <div class="swiper-container" data-aos="fade-up" data-aos-delay="100">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                        <img src="styles/images/residence/5-1.jpg" alt="">
+                                        <img src="styles/images/residence/5-1.jpg" alt="遠雄九五">
                                     </div>
                                     <div class="swiper-slide">
-                                        <img src="styles/images/residence/5-2.jpg" alt="">
+                                        <img src="styles/images/residence/5-2.jpg" alt="遠雄九五">
                                     </div>
                                 </div>
                                 <div class="swiper-pagination position-static d-table ml-auto w-auto pt-2 pt-md-3">

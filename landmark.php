@@ -15,12 +15,12 @@
                 <!--編輯器開始-->
                 <h1 class="hidden">遠雄九五</h1>
                 <div class="banner bg-black overflow-hidden">
-                    <video class="d-table h-100 w-100 mx-auto" autoplay muted loop playsinline>
+                    <!-- <video class="d-table h-100 w-100 mx-auto" autoplay muted loop playsinline>
                         <source src="styles/videos/1.mp4" type="video/mp4">
-                    </video>
-                    <!-- <div class="jqimgFill h-100">
-                        <img src="styles/images/landmark/banner.jpg" alt="">
-                    </div> -->
+                    </video> -->
+                    <div class="jqimgFill">
+                        <img src="styles/images/landmark/banner.jpg" alt="遠雄九五">
+                    </div>
                     <div class="text text-white position-absolute">
                         <p class="font-165 lh09 mb-1 mb-sm-0" data-aos="fade-up" data-aos-delay="1000">LANDMARK95</p>
                         <p class="NotoSerifTC font-22 font-weight-bold lh14 mb-2 pb-2" data-aos="fade-up" data-aos-delay="1200">永恆地標，超越時間限制的時代印記</p>
@@ -33,7 +33,7 @@
                     </div>
                     <?php include "links.php"; ?>
                 </div>
-                <div class="landmark-section-1 mask pt-4 pt-sm-5 mt-3 mt-sm-0">
+                <div class="landmark-section-1 mask bg-white pt-4 pt-sm-5 mt-3 mt-sm-0">
                     <div class="position-relative">
                         <div class="d-none d-lg-flex row dec-block position-absolute w-100 mx-0">
                             <div class="mycol-6 bg-grayF8F8F8"></div>
@@ -58,14 +58,14 @@
                                     </div>
                                 </div>
                                 <div class="mycol-lg-5" data-aos="fade-left">
-                                    <img src="styles/images/landmark/img-1.jpg" alt="">
+                                    <img src="styles/images/landmark/img-1.jpg" alt="遠雄九五">
                                 </div>
                             </div>
                         </div>
 
                     </div>
                 </div>
-                <div class="landmark-section-2 mask pt-5 pb-5 pb-lg-0 mb-3 mb-lg-0">
+                <div class="landmark-section-2 mask bg-white pt-5 pb-5 pb-lg-0">
                     <div class="pt-xl-5 px-4 px-xl-0">
                         <p class="font-65 max640 text-lg-center lh1 pt-md-4 mt-sm-2 mb-2 mb-lg-3 ml-0 ml-lg-auto" data-aos="fade-up">Exquisite Architecture asEnduring Legacy</p>
                         <p class="font-26 NotoSerifTC font-weight-bold text-brown776356 text-lg-center" data-aos="fade-up" data-aos-delay="100">精工建築 傳世典範</p>
@@ -74,7 +74,7 @@
                             <div class="col-12 col-lg px-0">
                                 <div class="pr-xl-5 mr-lg-5" data-aos="fade-right">
                                     <div class="mr-lg-2">
-                                        <img class="w-100 mb-4" src="styles/images/landmark/img-2.jpg" alt="">
+                                        <img class="w-100 mb-4" src="styles/images/landmark/img-2.jpg" alt="遠雄九五">
                                         <div class="left-brown-line-dec pt-1 pt-md-3 pl-4 pl-xl-5">
                                             <p class="font-28 mb-2" data-aos="fade-up">新東方文化美學 打造時尚新藝</p>
                                             <p class="font-20 text-6D6D6D lh165" data-aos="fade-up">經典建築，有個性有感情，不會被時代淹沒的是品味與精神。遠雄九五以新東方建築風格豎立經典，外觀以方尊為形，彰顯大盛大容氣勢。在設計細節中，寓涵東方文化的韻致和千年智慧。</p>
@@ -86,7 +86,7 @@
                                 <div class="pr-xl-5 mr-lg-5 pt-5 mt-xl-5" data-aos="fade-left">
                                     <div class="pt-xl-5 mt-xl-3">
                                         <div class="specialImg position-relative mb-4 mt-5">
-                                            <img class="position-relative w-100 z-1" src="styles/images/landmark/img-3.jpg" alt="">
+                                            <img class="position-relative w-100 z-1" src="styles/images/landmark/img-3.jpg" alt="遠雄九五">
                                         </div>
 
                                         <div class="left-brown-line-dec pt-2 pt-lg-3 pl-4 pl-xl-5 mt-5 mt-lg-0">
@@ -105,7 +105,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="landmark-section-3 position-relative mask pt-5">
+                <div class="landmark-section-3 bg-white position-relative mask pt-5">
                     <div class="d-none d-xl-flex row dec-block position-absolute w-100 mx-0">
                         <div class="mycol-4"></div>
                         <div class="mycol-4 bg-grayF8F8F8"></div>
@@ -154,9 +154,9 @@
                                             <div class="text-group position-lg-absolute py-3 py-md-5 px-4 p-xl-0">
                                                 <div class="number position-relative position-xl-absolute font-150 lh1 mb-1 mb-md-0">02</div>
                                                 <div class="max495 pb-md-1 pt-md-3 pt-xl-0">
-                                                    <p class="font-44 NotoSerifTC font-weight-bold lh13 les1 mb-2 mb-xl-4 pb-2 opacity0">
-                                                        <span class="d-block">新東方美學泰斗</span>
-                                                        <span class="d-block">打造改變城市的經典建築</span>
+                                                    <p class="font-44 NotoSerifTC font-weight-bold lh13 les1 mb-2 mb-xl-4 pb-2">
+                                                        <span class="d-block">文化融藝的設計</span>
+                                                        <span class="d-block">以照明形塑一座城市</span>
                                                     </p>
                                                     <p class="font-20 lh165">文化的價值跟「地標」始終交織纏繞。延伸「九五」白天建築物的意象，運用立面上的建築元素，以光刻劃出紋飾及線條，運用不同的色溫，將山水畫中「虛實相生」立體呈現。</p>
                                                 </div>
@@ -230,7 +230,7 @@
                         <div class="row h-100 mx-0">
                             <div class="col-12 col-xl-9 h-100 px-0">
                                 <div class="jqimgFill h-100">
-                                    <img src="styles/images/landmark/modal-1.jpg" alt="">
+                                    <img src="styles/images/landmark/modal-1.jpg" alt="遠雄九五">
                                 </div>
                             </div>
                             <div class="col-12 col-xl-3 d-xl-flex px-4 px-xl-5 pt-4">
@@ -241,7 +241,7 @@
                                             <span class="d-block font-20">台北101</span>
                                         </div>
                                         <p class="text-6D6D6D lh165 mb-0 mb-md-4 pb-3">每一件作品都是人生截至那個時間點的累積，101的樣子，說不定我已經想了一輩子。</p>
-                                        <img style="width:90px;" src="styles/images/landmark/signature-1.svg" alt="">
+                                        <img style="width:90px;" src="styles/images/landmark/signature-1.svg" alt="遠雄九五">
                                     </div>
                                     <button type="button" class="back position-xl-absolute text-hover-brown776356 mt-4 mt-md-5 mt-xl-0" data-dismiss="modal">
                                         <i class="icon-left mr-3"></i>
@@ -259,7 +259,7 @@
                         <div class="row h-100 mx-0">
                             <div class="col-12 col-xl-9 h-100 px-0">
                                 <div class="jqimgFill h-100">
-                                    <img src="styles/images/landmark/modal-2.jpg" alt="">
+                                    <img src="styles/images/landmark/modal-2.jpg" alt="遠雄九五">
                                 </div>
                             </div>
                             <div class="col-12 col-xl-3 d-xl-flex px-4 px-xl-5 pt-4">
@@ -270,7 +270,7 @@
                                             <span class="d-block font-20">北京奧運鳥巢</span>
                                         </div>
                                         <p class="text-6D6D6D lh165 mb-0 mb-md-4 pb-3">建築沒有了光，就沒有生命，光帶給人的感覺，是從回家的那一刻開始，象徵著城市的生命力。</p>
-                                        <img style="width:90px;" src="styles/images/landmark/signature-2.svg" alt="">
+                                        <img style="width:90px;" src="styles/images/landmark/signature-2.svg" alt="遠雄九五">
                                     </div>
                                     <button type="button" class="back position-xl-absolute text-hover-brown776356 mt-4 mt-md-5 mt-xl-0" data-dismiss="modal">
                                         <i class="icon-left mr-3"></i>
@@ -288,7 +288,7 @@
                         <div class="row h-100 mx-0">
                             <div class="col-12 col-xl-9 h-100 px-0">
                                 <div class="jqimgFill h-100">
-                                    <img src="styles/images/landmark/modal-3.jpg" alt="">
+                                    <img src="styles/images/landmark/modal-3.jpg" alt="遠雄九五">
                                 </div>
                             </div>
                             <div class="col-12 col-xl-3 d-xl-flex px-4 px-xl-5 pt-4">
@@ -299,7 +299,7 @@
                                             <span class="d-block font-20">遠雄九五</span>
                                         </div>
                                         <p class="text-6D6D6D lh165 mb-0 mb-md-4 pb-3">以豐富經驗完美詮釋豪宅空間，滿足金字塔頂端挑剔的需求，為台灣豪宅刻下一段段深厚底蘊的品味故事。</p>
-                                        <img style="width:90px;" src="styles/images/landmark/signature-3.svg" alt="">
+                                        <img style="width:90px;" src="styles/images/landmark/signature-3.svg" alt="遠雄九五">
                                     </div>
                                     <button type="button" class="back position-xl-absolute text-hover-brown776356 mt-4 mt-md-5 mt-xl-0" data-dismiss="modal">
                                         <i class="icon-left mr-3"></i>

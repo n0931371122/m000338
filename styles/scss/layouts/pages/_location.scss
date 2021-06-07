@@ -202,6 +202,9 @@
         }
     }
     @media(max-width:575px){
+        .banner .jqimgFill{
+            background-position: left 37% center !important;
+        }
         .location-section-2{
             .swiper-wrapper .jqimgFill{
                 height: 250px;

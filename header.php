@@ -1,4 +1,4 @@
-<header class="row position-fixed z-3 w-100 mx-0">
+<header class="row position-fixed z-4 w-100 mx-0">
 	<div class="col-auto col-lg-4 col-xl-6 d-flex align-center pl-4 pr-0">
 		<div class="logo ml-xl-5 pl-xl-5">
 			<a href="./">
@@ -15,19 +15,19 @@
 			<a href="tel:+886-2-85211008" class="d-lg-none font-16 flex-center col">
 				<i class="icon-tel d-flex"></i>
 			</a>
-			<a class="line col col-lg-4 flex-center" href="" target="_blank">
+			<a class="line col col-lg-4 flex-center" href="./" target="_blank">
 				<i class="icon-line-mobile d-lg-none flex-center font-20"></i>
 				<i class="icon-line d-none d-lg-flex flex-center font-18 mr-2"></i>
 				<span class="d-none d-lg-block CormorantInfant">LINE<span class="NotoSerifTC ml-1">諮詢</span></span>
 			</a>
-			<a class="fb d-none d-lg-flex col-auto col-lg-2 flex-center" href="" target="_blank">
+			<a class="fb d-none d-lg-flex col-auto col-lg-2 flex-center" href="./" target="_blank">
 				<i class="icon-fb"></i>
 			</a>
-			<a class="lang d-none d-lg-flex col-auto col-lg-2 CormorantInfant flex-center font-20" href="">EN</a>
+			<a class="lang d-none d-lg-flex col-auto col-lg-2 CormorantInfant flex-center font-20" href="./">EN</a>
 		</div>
 		<div class="menu-toggle cursor col col-lg-3 flex-center">
-			<img src="styles/images/header/toggle.png" alt="">
-			<img src="styles/images/header/toggle-black.png" alt="">
+			<img src="styles/images/header/toggle.png" alt="遠雄九五">
+			<img src="styles/images/header/toggle-black.png" alt="遠雄九五">
 			<span class="d-none d-lg-inline font-20 CormorantInfant ml-3">MENU</span>
 		</div>
 	</div>
@@ -37,12 +37,12 @@
 				<a href="tel:+886-2-85211008" class="d-lg-none font-16 flex-center col-auto ml-auto">
 					<i class="icon-tel"></i>
 				</a>
-				<a class="line col-auto col-lg-4 flex-center text-hover-brown776356" href="" target="_blank">
+				<a class="line col-auto col-lg-4 flex-center text-hover-brown776356" href="./" target="_blank">
 					<i class="icon-line-mobile d-lg-none flex-center font-20"></i>
 					<i class="icon-line d-none d-lg-flex flex-center font-20 mr-2"></i>
 					<span class="d-none d-lg-block CormorantInfant">LINE<span class="NotoSerifTC ml-1">諮詢</span></span>
 				</a>
-				<a class="fb d-none d-lg-flex col-2 flex-center text-hover-brown776356" href="" target="_blank">
+				<a class="fb d-none d-lg-flex col-2 flex-center text-hover-brown776356" href="./" target="_blank">
 					<i class="icon-fb"></i>
 				</a>
 				<a class="lang d-none d-lg-flex col-2 CormorantInfant flex-center font-20 text-hover-brown776356" href="./">EN</a>
@@ -102,12 +102,16 @@
 					<i class="icon-mail flex-center font-15 mr-2 mt-1"></i>
 					<span class="NotoSerifTC">預約賞屋</span>
 				</div>
-				<a class="fb d-flex d-lg-none col-3 flex-center font-16 px-0" href="" target="_blank">
+				<a class="fb d-flex d-lg-none col-3 flex-center font-16 px-0" href="./" target="_blank">
 					<i class="icon-fb"></i>
 				</a>
-				<a class="lang d-flex d-lg-none col-3 CormorantInfant flex-center font-20 px-0" href="">EN</a>
+				<a class="lang d-flex d-lg-none col-3 CormorantInfant flex-center font-20 px-0" href="./">EN</a>
 			</div>
 		</div>
 	</div>
-	<div class="mask"></div>
+	<div class="mask">
+		<div class="jqimgFill h-100">
+			<img src="styles/images/header/menu-open-bg.jpg" alt="">
+		</div>
+	</div>
 </header>

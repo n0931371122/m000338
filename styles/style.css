@@ -3,56 +3,6 @@
 @import url("scss/plugins/swiper-bundle.min.css");
 @import url("scss/plugins/aos.css");
 @import url("font/css/fontello.css");
-@font-face {
-  font-family: Cormorant Infant;
-  src: url(CormorantInfant-Bold.ttf);
-  font-weight: 700;
-}
-@font-face {
-  font-family: Noto Sans TC;
-  src: url(NotoSansTC-Regular.otf);
-  font-weight: 400;
-}
-@font-face {
-  font-family: Noto Sans TC;
-  src: url(NotoSansTC-Medium.otf);
-  font-weight: 500;
-}
-@font-face {
-  font-family: Noto Sans TC;
-  src: url(NotoSansTC-Bold.otf);
-  font-weight: 700;
-}
-@font-face {
-  font-family: Noto Serif TC;
-  src: url(NotoSerifTC-Regular.otf);
-  font-weight: 400;
-}
-@font-face {
-  font-family: Noto Serif TC;
-  src: url(NotoSerifTC-SemiBold.otf);
-  font-weight: 600;
-}
-@font-face {
-  font-family: Noto Serif TC;
-  src: url(NotoSerifTC-Bold.otf);
-  font-weight: 700;
-}
-@font-face {
-  font-family: Amiri;
-  src: url(Amiri-Regular.ttf);
-  font-weight: 400;
-}
-@font-face {
-  font-family: Amiri;
-  src: url(Amiri-Bold.ttf);
-  font-weight: 700;
-}
-@font-face {
-  font-family: Roboto;
-  src: url(Roboto-Regular.ttf);
-  font-weight: 400;
-}
 .NotoSansTC {
   font-family: Noto Sans TC;
 }
@@ -163,6 +113,10 @@
 
 .z-3 {
   z-index: 3;
+}
+
+.z-4 {
+  z-index: 4;
 }
 
 .overflow-hidden {
@@ -979,6 +933,11 @@ input[type=number] {
   background-size: calc(100%/8);
   background-image: linear-gradient(90deg, transparent 0px, transparent calc(100% - 1px), rgba(255, 255, 255, 0.08) calc(100% - 1px), rgba(255, 255, 255, 0.08) 100%);
 }
+.banner .jqimgFill {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
 .banner .text {
   width: 100%;
   left: 0;
@@ -1007,7 +966,7 @@ input[type=number] {
 .banner .links {
   bottom: 0;
   left: 0;
-  width: 50%;
+  width: 49.99%;
 }
 .banner .links a {
   padding: 15px 15px;
@@ -1069,7 +1028,6 @@ input[type=number] {
   left: 0;
   width: 100%;
   position: absolute;
-  z-index: -1;
   top: 0;
   bottom: 0;
   display: block;
@@ -1104,7 +1062,8 @@ input[type=number] {
 }
 
 html.menuOpen .menu {
-  right: 0;
+  opacity: 1;
+  pointer-events: all;
 }
 html.menuOpen header .reservation {
   opacity: 0;
@@ -1155,6 +1114,7 @@ html.scrollMode header .menu-toggle {
 @media (max-width: 991px) {
   html.menuOpen {
     overflow: hidden;
+    -webkit-overflow-scrolling: touch;
   }
   html.menuOpen header .logo {
     color: black;
@@ -1178,12 +1138,30 @@ html.scrollMode header .menu-toggle {
     display: block;
   }
 }
+@media (max-width: 991px) and (orientation: landscape) {
+  html .block > div {
+    padding-top: 260px !important;
+    min-height: 500px;
+  }
+  html .block > div a > span:nth-child(1) {
+    margin-top: 5px;
+  }
+}
+@media (max-width: 767px) and (orientation: landscape) {
+  html .block > div {
+    padding-top: 30px !important;
+  }
+}
 
 header {
   color: white;
   height: 90px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   transition: all 0.3s;
+}
+header.menuHoverMode .menu ul li a {
+  color: #6D6D6D;
+  opacity: 0.5;
 }
 header .menu-toggle img:nth-child(2) {
   display: none;
@@ -1204,10 +1182,12 @@ header .lang:hover {
 }
 header .menu {
   top: 0px;
-  right: -714px;
+  right: 0;
   width: 37.5%;
-  height: 100vh;
-  transition: right 0.3s;
+  bottom: 0;
+  transition: all 0.3s;
+  opacity: 0;
+  pointer-events: none;
 }
 header .menu .menu-toggle,
 header .menu .reservation,
@@ -1226,6 +1206,7 @@ header .menu .block {
 }
 header .menu .block ul li a {
   padding: 2px 0;
+  transition: all 0.3s;
 }
 header .menu .block ul li a:before {
   content: "";
@@ -1239,6 +1220,9 @@ header .menu .block ul li a:before {
   transform: translate(10px, -50%);
   opacity: 0;
   transition: all 0.3s;
+}
+header .menu .block ul li a:hover {
+  opacity: 1;
 }
 header .menu .block ul li a:hover:before {
   opacity: 1;
@@ -1264,10 +1248,14 @@ header .mask {
   top: 0;
   left: 0;
   bottom: 0;
-  right: 0;
+  right: 37.5%;
   background: rgba(0, 0, 0, 0.3);
   pointer-events: none;
   opacity: 0;
+  transition: opacity 0.3s;
+}
+header .mask::before {
+  display: none;
 }
 @media (max-width: 1199px) {
   header .menu {
@@ -1283,7 +1271,6 @@ header .mask {
   }
   header .menu {
     width: 100%;
-    right: -100%;
   }
   header .menu .row {
     height: 60px;
@@ -1320,16 +1307,26 @@ header .mask {
     flex: 0 0 60px;
     border-left: 1px solid rgba(255, 255, 255, 0.08);
   }
+  header .mask {
+    display: none;
+  }
 }
 @media (max-width: 767px) {
   header .block > div {
     height: 100%;
   }
   header .block > div ul {
-    height: calc(100% - 156px);
+    height: calc(100% - 132px);
+  }
+  header .menu .block {
+    height: calc(100% - 140px);
   }
   header .menu li {
     height: calc(100% / 4);
+    min-height: 80px;
+  }
+  header .menu .row {
+    height: 70px;
   }
 }
 @media (max-width: 350px) {
@@ -1517,12 +1514,6 @@ header .mask {
     transform: rotate(360deg);
   }
 }
-#index {
-  opacity: 0;
-}
-#index.is-loaded {
-  opacity: 1;
-}
 #index.menuMode header {
   opacity: 1;
   pointer-events: all;
@@ -1534,6 +1525,13 @@ header .mask {
 #index.menuMode .menu {
   opacity: 1;
   pointer-events: all;
+}
+#index.menuHoverMode .menu a {
+  color: #6D6D6D;
+  opacity: 0.5;
+}
+#index.menuHoverMode .menu a:hover {
+  opacity: 1;
 }
 #index header {
   height: 80px;
@@ -1589,6 +1587,29 @@ header .mask {
 }
 #index .cover .building-wrapper .building {
   width: 98px;
+}
+#index .cover .building-wrapper .building-mask-1 {
+  top: 137px;
+  left: 0;
+  width: 98px;
+  height: 190px;
+  background: white;
+}
+#index .cover .building-wrapper .building-mask-2 {
+  top: 26px;
+  left: 50%;
+  width: 64px;
+  height: 112px;
+  background: white;
+  transform: translateX(-50%);
+}
+#index .cover .building-wrapper .building-mask-3 {
+  top: 0px;
+  left: 50%;
+  width: 48px;
+  height: 27px;
+  background: white;
+  transform: translateX(-50%);
 }
 #index .cover .logo {
   height: 85px;
@@ -1661,8 +1682,19 @@ header .mask {
   right: 0;
   transform: translateY(-50%);
 }
-#index .cover button {
-  border-bottom: 2px solid black;
+#index .cover .enter-wrapper:hover button::after {
+  width: 100%;
+}
+#index .cover .enter-wrapper button::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background: black;
+  transition: all 0.3s;
 }
 #index .menu {
   opacity: 0;
@@ -1675,6 +1707,9 @@ header .mask {
 }
 #index .menu li:nth-child(even) .img {
   top: 0;
+}
+#index .menu li a {
+  color: black;
 }
 #index .menu li a:hover {
   color: white;
@@ -1701,16 +1736,19 @@ header .mask {
 #index .menu li a:hover .img img {
   transform: scale(1);
 }
-#index .menu li .text {
+#index .menu li a .text {
   transition: margin-top 0.3s;
 }
-#index .menu li .text .font-22 {
+#index .menu li a .text .font-40 {
+  transition: all 0.3s;
+}
+#index .menu li a .text .font-22 {
   transition: height 0.3s;
 }
-#index .menu li .text .font-24 {
-  color: rgba(109, 109, 109, 0.5);
+#index .menu li a .text .font-24 {
+  color: #6d6d6d;
 }
-#index .menu li .text .font-24::after {
+#index .menu li a .text .font-24::after {
   content: "";
   display: block;
   position: absolute;
@@ -1722,7 +1760,7 @@ header .mask {
   background: #786457;
   opacity: 0;
 }
-#index .menu li .text .lh16 {
+#index .menu li a .text .lh16 {
   height: 0;
   transition: height 0.3s;
 }
@@ -1813,13 +1851,27 @@ header .mask {
   #index .logo-wrapper {
     transform: scale(0.7);
   }
+  #index .cover {
+    transition: opacity 0.5s;
+  }
 }
 @media (max-width: 575px) {
-  #index .cover .building-wrapper .building {
-    width: 80px;
+  #index {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
   }
-  #index .cover .building-wrapper .line-wrapper {
-    width: 86px;
+  #index main {
+    position: absolute;
+    top: 60px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  #index .cover .building-wrapper {
+    transform: scale(0.816);
   }
   #index .logo-wrapper {
     transform: scale(0.4);
@@ -1832,6 +1884,9 @@ header .mask {
   }
   #index .font-26 {
     font-size: 18px;
+  }
+  #index .menu {
+    height: 100%;
   }
   #index .menu li .text .font-24 {
     color: #6D6D6D;
@@ -1854,6 +1909,14 @@ header .mask {
   }
   #index .font-26 {
     font-size: 18px;
+  }
+}
+@media (max-width: 991px) and (orientation: landscape) {
+  #index .menu {
+    padding-top: 50px;
+  }
+  #index .cover {
+    min-height: 750px;
   }
 }
 
@@ -1960,7 +2023,7 @@ header .mask {
   border: 2px solid transparent;
 }
 .editor .landmark-section-3 .swiper-pagination .swiper-pagination-bullet:not(.swiper-pagination-bullet-active):hover::after {
-  border: 2px solid #6D6D6D;
+  border: 2px solid #A2A2A2;
 }
 .editor .landmark-section-3 .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
   border: 2px solid #7A5E53;
@@ -1976,8 +2039,8 @@ header .mask {
   transition: all 0.3s;
 }
 .editor .landmark-section-3 .swiper-pagination .swiper-pagination-bullet::after {
-  width: 50%;
-  height: 50%;
+  width: 100%;
+  height: 100%;
   border: 2px solid transparent;
 }
 .editor .landmark-section-3 .swiper-pagination .swiper-pagination-bullet::before {
@@ -2356,14 +2419,14 @@ header .mask {
 .editor .amenities-section-3 .row:nth-child(2) .mycol-3 > div {
   margin-top: 96px;
 }
-.editor .amenities-section-3 .view-detail .wrapper {
-  cursor: none;
+.editor .amenities-section-3 .view-detail:hover .view-btn {
+  opacity: 1;
 }
 .editor .amenities-section-3 .view-detail .view-btn {
   width: 70px;
   height: 70px;
-  margin: -35px 0 0 -35px;
-  position: absolute;
+  opacity: 0;
+  transition: all 0.3s;
 }
 .editor .amenities-section-3 .view-detail .detail {
   opacity: 0;
@@ -2377,6 +2440,7 @@ header .mask {
 .editor .amenities-section-3 .view-detail .detail.active {
   opacity: 1;
   pointer-events: all;
+  z-index: 2;
 }
 .editor .amenities-section-3 .view-detail .detail button {
   bottom: 35px;
@@ -2432,9 +2496,6 @@ header .mask {
   .editor .amenities-section-3 .row:nth-child(2) {
     margin-top: 0px;
   }
-  .editor .amenities-section-3 .view-detail .wrapper {
-    cursor: initial;
-  }
   .editor .amenities-section-3 .view-detail .view-btn {
     display: none;
   }
@@ -2444,7 +2505,7 @@ header .mask {
     width: 80px;
   }
   .editor .amenities-modal button {
-    top: 24px;
+    top: 18px;
     right: 24px;
   }
 }
@@ -2584,8 +2645,8 @@ header .mask {
   top: 72%;
   transform: translate(50%, -50%);
   background: url(images/residence/drag.png) center no-repeat;
-  width: 75px;
-  height: 75px;
+  width: 81px;
+  height: 81px;
   cursor: pointer;
 }
 .editor .residence-section-1 .curtain-wrapper #curtain-2 {
@@ -2608,6 +2669,8 @@ header .mask {
   width: 100%;
   height: 100%;
   z-index: -1;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .editor .residence-section-3::before {
   z-index: 0;
@@ -2648,20 +2711,29 @@ header .mask {
   .editor .residence-section-1 .curtain-wrapper {
     height: 300px;
   }
+  .editor .residence-section-2 {
+    height: 500px;
+  }
 }
 @media (max-width: 767px) {
   .editor .residence-section-1 .curtain-wrapper #curtain #drag-button {
     width: 50px;
     height: 50px;
+    background-size: cover;
   }
   .editor .residence-section-2 {
-    height: calc(100vh - 60px);
+    height: 470px;
   }
   .editor .residence-section-3 .swiper-pagination {
     margin-right: -10px;
   }
   .editor .residence-section-3 .swiper-pagination .swiper-pagination-bullet {
     margin: 0 10px;
+  }
+}
+@media (max-width: 350px) {
+  .editor .residence-section-2 .font-88 {
+    font-size: 40px;
   }
 }
 
@@ -2840,6 +2912,9 @@ header .mask {
   }
 }
 @media (max-width: 575px) {
+  .editor .banner .jqimgFill {
+    background-position: left 37% center !important;
+  }
   .editor .location-section-2 .swiper-wrapper .jqimgFill {
     height: 250px;
   }

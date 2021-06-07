@@ -15,8 +15,8 @@
                 <!--編輯器開始-->
                 <h1 class="hidden">核心區域</h1>
                 <div class="banner bg-black overflow-hidden">
-                    <div class="jqimgFill h-100">
-                        <img src="styles/images/location/banner.jpg" alt="">
+                    <div class="jqimgFill">
+                        <img src="styles/images/location/banner.jpg" alt="遠雄九五">
                     </div>
                     <div class="text text-white position-absolute">
                         <p class="font-165 lh09 mb-1 mb-sm-0" data-aos="fade-up" data-aos-delay="1000">LOCATION</p>
@@ -30,7 +30,7 @@
                     </div>
                     <?php include "links.php"; ?>
                 </div>
-                <div class="location-section-1 mask z-1 pt-5">
+                <div class="location-section-1 mask bg-white z-1 pt-5">
                     <div class="row mx-0 pt-lg-5 mt-lg-4 pb-4 pb-md-5 mb-md-3 px-4 px-xl-0">
                         <div class="blank"></div>
                         <div class="col-12 mycol-xl-6 px-0 pt-lg-3">
@@ -56,12 +56,12 @@
                     </div>
                     <div class="row mx-0">
                         <div class="mycol-xl-7">
-                            <img src="styles/images/location/1.jpg" alt="" data-aos="fade-up">
+                            <img src="styles/images/location/1.jpg" alt="遠雄九五" data-aos="fade-up">
                         </div>
                         <div class="blank"></div>
                     </div>
                 </div>
-                <div class="location-section-2 mask">
+                <div class="location-section-2 mask bg-white">
                     <div class="d-none d-lg-flex row dec-block position-absolute w-100 mx-0">
                         <div class="mycol-xl-2"></div>
                         <div class="mycol-xl-6 bg-grayF8F8F8"></div>
@@ -99,9 +99,9 @@
                                     <div class="swiper-slide">
                                         <div class="row mx-0">
                                             <div class="col-12 col-lg-8 jqimgFill px-0">
-                                                <img src="styles/images/location/slider-1.jpg" alt="">
+                                                <img src="styles/images/location/slider-1.jpg" alt="遠雄九五">
                                             </div>
-                                            <div class="col-12 col-lg-4 text bg-white position-static position-xl-absolute max440 py-3 py-md-4 py-xl-5 px-0 px-lg-4 px-xl-5">
+                                            <div class="col-12 col-lg-4 text bg-white position-static position-xl-absolute max440 pt-3 py-md-4 py-xl-5 px-0 px-lg-4 px-xl-5">
                                                 <div class="px-xl-3 pb-xl-5 mb-xl-3">
                                                     <div class="dec-line position-relative pb-3 pb-md-4 mb-3 mb-md-4">
                                                         <span class="d-block font-20 font-weight-bold mb-md-2">01</span>
@@ -116,9 +116,9 @@
                                     <div class="swiper-slide">
                                         <div class="row mx-0">
                                             <div class="col-12 col-lg-8 jqimgFill px-0">
-                                                <img src="styles/images/location/slider-2.jpg" alt="">
+                                                <img src="styles/images/location/slider-2.jpg" alt="遠雄九五">
                                             </div>
-                                            <div class="col-12 col-lg-4 text bg-white position-static position-xl-absolute max440 py-3 py-md-4 py-xl-5 px-0 px-lg-4 px-xl-5">
+                                            <div class="col-12 col-lg-4 text bg-white position-static position-xl-absolute max440 pt-3 py-md-4 py-xl-5 px-0 px-lg-4 px-xl-5">
                                                 <div class="px-xl-3 pb-xl-5 mb-xl-3">
                                                     <div class="dec-line position-relative pb-3 pb-md-4 mb-3 mb-md-4">
                                                         <span class="d-block font-20 font-weight-bold mb-md-2">02</span>
@@ -133,9 +133,9 @@
                                     <div class="swiper-slide">
                                         <div class="row mx-0">
                                             <div class="col-12 col-lg-8 jqimgFill px-0">
-                                                <img src="styles/images/location/slider-3.jpg" alt="">
+                                                <img src="styles/images/location/slider-3.jpg" alt="遠雄九五">
                                             </div>
-                                            <div class="col-12 col-lg-4 text bg-white position-static position-xl-absolute max440 py-3 py-md-4 py-xl-5 px-0 px-lg-4 px-xl-5">
+                                            <div class="col-12 col-lg-4 text bg-white position-static position-xl-absolute max440 pt-3 py-md-4 py-xl-5 px-0 px-lg-4 px-xl-5">
                                                 <div class="px-xl-3 pb-xl-5 mb-xl-3">
                                                     <div class="dec-line position-relative pb-3 pb-md-4 mb-3 mb-md-4">
                                                         <span class="d-block font-20 font-weight-bold mb-md-2">03</span>
@@ -150,9 +150,9 @@
                                     <div class="swiper-slide">
                                         <div class="row mx-0">
                                             <div class="col-12 col-lg-8 jqimgFill px-0">
-                                                <img src="styles/images/location/slider-4.jpg" alt="">
+                                                <img src="styles/images/location/slider-4.jpg" alt="遠雄九五">
                                             </div>
-                                            <div class="col-12 col-lg-4 text bg-white position-static position-xl-absolute max440 py-3 py-md-4 py-xl-5 px-0 px-lg-4 px-xl-5">
+                                            <div class="col-12 col-lg-4 text bg-white position-static position-xl-absolute max440 pt-3 py-md-4 py-xl-5 px-0 px-lg-4 px-xl-5">
                                                 <div class="px-xl-3 pb-xl-5 mb-xl-3">
                                                     <div class="dec-line position-relative pb-3 pb-md-4 mb-3 mb-md-4">
                                                         <span class="d-block font-20 font-weight-bold mb-md-2">04</span>
@@ -167,9 +167,9 @@
                                     <div class="swiper-slide">
                                         <div class="row mx-0">
                                             <div class="col-12 col-lg-8 jqimgFill px-0">
-                                                <img src="styles/images/location/slider-5.jpg" alt="">
+                                                <img src="styles/images/location/slider-5.jpg" alt="遠雄九五">
                                             </div>
-                                            <div class="col-12 col-lg-4 text bg-white position-static position-xl-absolute max440 py-3 py-md-4 py-xl-5 px-0 px-lg-4 px-xl-5">
+                                            <div class="col-12 col-lg-4 text bg-white position-static position-xl-absolute max440 pt-3 py-md-4 py-xl-5 px-0 px-lg-4 px-xl-5">
                                                 <div class="px-xl-3 pb-xl-5 mb-xl-3">
                                                     <div class="dec-line position-relative pb-3 pb-md-4 mb-3 mb-md-4">
                                                         <span class="d-block font-20 font-weight-bold mb-md-2">05</span>
@@ -184,9 +184,9 @@
                                     <div class="swiper-slide">
                                         <div class="row mx-0">
                                             <div class="col-12 col-lg-8 jqimgFill px-0">
-                                                <img src="styles/images/location/slider-6.jpg" alt="">
+                                                <img src="styles/images/location/slider-6.jpg" alt="遠雄九五">
                                             </div>
-                                            <div class="col-12 col-lg-4 text bg-white position-static position-xl-absolute max440 py-3 py-md-4 py-xl-5 px-0 px-lg-4 px-xl-5">
+                                            <div class="col-12 col-lg-4 text bg-white position-static position-xl-absolute max440 pt-3 py-md-4 py-xl-5 px-0 px-lg-4 px-xl-5">
                                                 <div class="px-xl-3 pb-xl-5 mb-xl-3">
                                                     <div class="dec-line position-relative pb-3 pb-md-4 mb-3 mb-md-4">
                                                         <span class="d-block font-20 font-weight-bold mb-md-2">06</span>

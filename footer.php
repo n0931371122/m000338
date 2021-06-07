@@ -1,7 +1,7 @@
-<div class="contact text-white pt-5 px-4 pb-3 pb-md-0">
+<div class="contact position-relative text-white pt-5 px-4 pb-3 pb-md-0">
     <div class="d-block d-md-flex row max960 text-center pt-3 pt-md-5 mt-md-4 pb-5">
         <div class="col-12 pt-1 mb-5">
-            <form action="" class="mt-5 pb-md-5" data-aos="fade-up">
+            <form action="./" class="mt-5 pb-md-5" data-aos="fade-up">
                 <div>
                     <p class="font-65 lh1 mb-2 pb-1 pb-md-0" data-aos="fade-up">Contact Us</p>
                     <p class="max480" data-aos="fade-up" data-aos-delay="100">
@@ -31,7 +31,7 @@
                             <div class="flex-grow pr-4">
                                 <input type="text" id="verificationCode" name="verificationCode" class="border-0 text-white col pr-0">
                             </div>
-                            <img src="styles/images/footer/verificationCode.png" alt="">
+                            <img src="styles/images/footer/verificationCode.png" alt="遠雄九五">
                         </div>
                         <button class="font-20 text-white bg-brown w-100 bg-hover-darkBrown py-2" type="submit">
                             <span class="d-block py-1">預約賞屋</span>
@@ -57,7 +57,7 @@
         </div>
     </div>
 </div>
-<footer class="Roboto bg-darkBrown text-brown776356 font-16 text-center lh165 py-4 px-4">
+<footer class="Roboto position-relative bg-darkBrown text-brown776356 font-16 text-center lh165 py-4 px-4">
     <div class="py-md-3 my-2">
         <span>Copyright © 2021 Farglory Realty All Rights Reserved.</span>
         <span class="d-block d-md-inline">Designed by <a class="text-hover-white" href="https://minmax.tw/" target="_blank">MINMAX 網頁設計</a></span>

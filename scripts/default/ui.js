@@ -55,12 +55,12 @@ $(function (){
 		[page]
      ==========================================================================*/
      $("#index").each(function(){
+        
         $(".enter").click(function(){
-        $(".wp").addClass("menuMode");
+         $(".wp").addClass("menuMode");
         });
-        window.onload = init;
+        
         function init() {
-            $("#index").addClass("is-loaded");
             setTimeout(function(){
                 $(".cover .logo").addClass("located");
             },2800);
@@ -142,7 +142,7 @@ $(function (){
                 }, {
                     duration: 1.2,
                     autoAlpha: 1
-                }, 2) 
+                }, 5) 
                 .from(".line", {
                     drawSVG: 0,
                     duration: 2
@@ -151,18 +151,53 @@ $(function (){
                     autoAlpha:0,
                     duration: 2,
                 }, 5)
-                .from(".building", {
-                    top:100,
-                    autoAlpha:0,
-                    duration: 1
+                .to(".building-mask-1", {
+                    height:0,
+                    duration: 1,
+                    ease:Linear.easeNone
                 }, 4.5)
+                .to(".building-mask-2", {
+                    height:0,
+                    duration: 0.584,
+                    ease:Linear.easeNone
+                }, 5.5)
+                .to(".building-mask-3", {
+                    height:0,
+                    duration: 0.142,
+                    ease:Linear.easeNone
+                }, 6.1)
                 .from(".text-wrapper", {
                     top:100,
                     autoAlpha:0,
                     duration: 1
                 }, 4.5);
 
+                $(".enter-wrapper").mouseover(function(){
+                    $(".enter-wrapper").mousemove(function(e){
+                        TweenLite.to($(this).find(".enter"), 0.8, {
+                            css: {
+                                left: e.pageX-$(e.target).offset().left - $(e.target).width()/2 ,
+                                top: e.pageY-$(e.target).offset().top- $(e.target).height()/2 ,
+                            }
+                        });
+                    });
+                });
+                 $(".enter-wrapper").mouseout(function(){
+                    TweenLite.to($(this).find(".enter"), 0.8, {
+                        css: {
+                            left: 0,
+                            top: 0
+                        }
+                    });
+                 });
+
         }
+        init();
+        $("main .menu a").hover(function(){
+            $("#index").addClass("menuHoverMode");
+        },function(){
+            $("#index").removeClass("menuHoverMode");
+        });
      });
     $("#landmarkEditor").each(function(){
         new Swiper('.swiper-container', {
@@ -198,33 +233,28 @@ $(function (){
                 prevEl: '.swiper-button-prev',
             }
         })  
-        var $viewBtn = $('.view-btn'),
-            $wrapper = $('.wrapper');
+        var $wrapper = $('.wrapper');
         if(windowW>1400){
-            function moveCircle(e) {
-                TweenLite.to($viewBtn, 0.8, {
-                    css: {
-                        left: e.pageX,
-                        top: e.pageY-$(window).scrollTop()
-                    }
-                });
-            }
-            var flag = false;
-            $($wrapper).mouseover(function() {
-                flag = true;
-                TweenLite.to($viewBtn, 0.4, {
-                    scale: 1,
-                    autoAlpha: 1
-                })
-                $($wrapper).on('mousemove', moveCircle);
-            });
-            $($wrapper).mouseout(function() {
-                flag = false;
-                TweenLite.to($viewBtn, 0.4, {
-                    scale: 0.1,
-                    autoAlpha: 0
-                })
-            });
+            // $($wrapper).mouseover(function() {
+            //     TweenLite.to($(this).prev(".view-btn"), 0.4, {
+            //         scale: 1,
+            //         autoAlpha: 1
+            //     })
+            // });
+            //  $($wrapper).mousemove(function(e){
+            //     TweenLite.to($(this).prev(".view-btn"), 0.8, {
+            //         css: {
+            //             left: e.pageX-$(e.target).offset().left,
+            //             top: e.pageY-$(e.target).offset().top
+            //         }
+            //     });
+            //  });
+            // $($wrapper).mouseout(function() {
+            //     TweenLite.to($(this).prev(".view-btn"), 0.4, {
+            //         scale: 0.1,
+            //         autoAlpha: 0
+            //     })
+            // });
             $(".wrapper").click(function(){
                 $(this).next(".detail").addClass("active");
             });
@@ -272,13 +302,24 @@ $(function (){
             });
         }
         curtain();
+        if(windowW<1200){
+            $(".residence-section-2  img").height(windowH);
+        }
+        $(window).scroll(function(){
+            if($(window).scrollTop()>windowH){
+                $(".banner .jqimgFill").addClass("opacity0");
+            }
+            else{
+                $(".banner .jqimgFill").removeClass("opacity0");
+            }
+        });
     });
     $("#locationEditor").each(function(){
         new Swiper ('.swiper-container', {
             loop: true, // 循环模式选项
             centeredSlides:true,
             centeredSlidesBounds:true,
-            speed: 1000,
+            speed: 800,
             slidesPerView: 1,
             // 如果需要分页器
             breakpoints: {
@@ -354,6 +395,15 @@ $(function (){
             }
         });
     });
+    $("header .menu a").hover(function(){
+        $("header").addClass("menuHoverMode");
+    },function(){
+        $("header").removeClass("menuHoverMode");
+    });
+    if(windowW<1200){
+        $(".banner").height(windowH);
+        $(".banner .jqimgFill").height(windowH);
+    }
     aosInit();
 })
 function aosInit(){

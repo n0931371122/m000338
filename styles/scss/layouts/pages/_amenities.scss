@@ -147,14 +147,16 @@
             
         }
         .view-detail{   
-            .wrapper{
-                cursor: none;
+            &:hover{
+                .view-btn{
+                    opacity: 1;
+                }
             }
             .view-btn{
                 width: 70px;
                 height: 70px;
-                margin: -35px 0 0 -35px;
-                position: absolute;
+                opacity: 0;
+                transition: all .3s;
             }
             .detail{
                 opacity: 0;
@@ -167,6 +169,7 @@
                 &.active{
                     opacity: 1;
                     pointer-events: all;
+                    z-index: 2;
                 }
                 button{
                     bottom: 35px;
@@ -231,9 +234,6 @@
                 margin-top: 0px;
             }
             .view-detail{
-                .wrapper{
-                    cursor: initial;
-                }
                 .view-btn{
                     display: none;
                 }
@@ -247,7 +247,7 @@
         }
         .amenities-modal{
             button{
-                top: 24px;
+                top: 18px;
                 right: 24px;
             }
         }

@@ -1,9 +1,4 @@
 #index{
-    opacity: 0;
-    &.is-loaded{
-        opacity: 1;
-
-    }
     &.menuMode{
         header{
             opacity: 1;
@@ -16,6 +11,15 @@
         .menu{
             opacity: 1;
             pointer-events: all;
+        }
+    }
+    &.menuHoverMode{
+        .menu a{
+            color:#6D6D6D;
+            opacity: 0.5;
+            &:hover{
+                opacity: 1;
+            }
         }
     }
     header{
@@ -67,8 +71,30 @@
             .building{
                 width: 98px;
             }
+            .building-mask-1{
+                top: 137px;
+                left: 0;
+                width: 98px;
+                height: 190px;
+                background: white;
+            }
+            .building-mask-2{
+                top: 26px;
+                left: 50%;
+                width: 64px;
+                height: 112px;
+                background: white;
+                transform: translateX(-50%);
+            }
+            .building-mask-3{
+                top: 0px;
+                left: 50%;
+                width: 48px;
+                height: 27px;
+                background: white;
+                transform: translateX(-50%);
+            }
         }
-
         .logo{
             height: 85px;
             transform: translateY(-120%);
@@ -143,8 +169,27 @@
 
             }
         }
-        button{
-            border-bottom:2px solid black;
+        .enter-wrapper{
+            &:hover{
+                button{
+                    &::after{
+                        width: 100%;
+                    }
+                }
+            }
+            button{
+                &::after{
+                    content:"";
+                    display: block;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    height: 2px;
+                    width: 0;
+                    background: black;
+                    transition: all .3s;
+                }
+            }
         }
     }
     .menu{
@@ -163,57 +208,65 @@
                     top: 0; 
                 }
             }
-            a:hover{
-                color:white;
-                .text{
-                    margin-top: -77px; 
-                    .font-22{
-                       height: 0;
+
+            a{
+                color:black;
+                &:hover{
+                    color:white;
+                    .text{
+                        margin-top: -77px; 
+                        .font-22{
+                        height: 0;
+                        }
+                    
+                        .font-24{
+                            color:white;
+                            padding-bottom: 15px;
+                            &::after{
+                                opacity: 1;
+                            }
+                        }
+                        .lh16{
+                            height: auto;
+                        }
                     }
-                
+                    .img{
+                        opacity: 1;
+                        img{
+                            transform: scale(1);
+                        }
+                    }
+                }
+                .text{
+                    transition: margin-top .3s;
+                    .font-40{
+                        transition: all .3s;
+                    }
+                    .font-22{
+                        transition: height .3s;
+                    }
                     .font-24{
-                        color:white;
-                        padding-bottom: 15px;
+                        color:rgba(109,109,109,1);
                         &::after{
-                            opacity: 1;
+                            content:"";
+                            display: block;
+                            position: absolute;
+                            bottom: 0;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            width: 25px;
+                            height: 1px;
+                            background: #786457;
+                            opacity: 0;
                         }
                     }
                     .lh16{
-                        height: auto;
-                    }
-                }
-                .img{
-                    opacity: 1;
-                    img{
-                        transform: scale(1);
-                    }
-                }
-            }
-            .text{
-                transition: margin-top .3s;
-                .font-22{
+                    height: 0;
                     transition: height .3s;
-                }
-                .font-24{
-                    color:rgba(109,109,109,0.5);
-                    &::after{
-                        content:"";
-                        display: block;
-                        position: absolute;
-                        bottom: 0;
-                        left: 50%;
-                        transform: translateX(-50%);
-                        width: 25px;
-                        height: 1px;
-                        background: #786457;
-                        opacity: 0;
                     }
                 }
-                .lh16{
-                   height: 0;
-                   transition: height .3s;
-                }
             }
+
             .img{
                 left: 0;
                 opacity: 0;
@@ -307,15 +360,25 @@
         .logo-wrapper{
             transform: scale(0.7);
         }
+        .cover{
+            transition: opacity .5s;
+        }
     }
     @media(max-width:575px){
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        main{
+            position: absolute;
+            top: 60px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
         .cover .building-wrapper{
-            .building{
-                width: 80px;    
-            }
-            .line-wrapper{
-                width: 86px;
-            }
+            transform: scale(0.816);
         }
         .logo-wrapper{
             transform: scale(0.4);
@@ -329,9 +392,12 @@
         .font-26{
             font-size: 18px;
         }
-        .menu li .text .font-24{
-            color:#6D6D6D;
-        }
+            .menu{
+                height: 100%;
+                li .text .font-24{
+                    color:#6D6D6D;
+                }
+            }
         .animated-bg{
             .shape-1{      
                 bottom: -30vh; 
@@ -355,4 +421,12 @@
             font-size: 18px;
         }
     } 
+    @media (max-width:991px) and (orientation:landscape){
+        .menu{
+            padding-top: 50px;
+        }
+        .cover{
+            min-height: 750px;
+        }
+    }
 }

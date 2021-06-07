@@ -15,8 +15,8 @@
                 <!--編輯器開始-->
                 <h1 class="hidden">高空會所</h1>
                 <div class="banner bg-black overflow-hidden">
-                    <div class="jqimgFill h-100">
-                        <img src="styles/images/amenities/banner.jpg" alt="">
+                    <div class="jqimgFill">
+                        <img src="styles/images/amenities/banner.jpg" alt="遠雄九五">
                     </div>
                     <div class="text text-white position-absolute">
                         <p class="font-165 lh09 mb-1 mb-sm-0" data-aos="fade-up" data-aos-delay="1000">AMENITIES</p>
@@ -30,8 +30,8 @@
                     </div>
                     <?php include "links.php"; ?>
                 </div>
-                <div class="amenities-section-1 mask pt-4 pt-sm-5 mt-3 mt-sm-0">
-                    <div class="pt-lg-5 mt-lg-3">
+                <div class="amenities-section-1 mask bg-white pt-4 pt-sm-5">
+                    <div class="pt-lg-5 mt-lg-3 mt-3 mt-sm-0">
                         <div class="d-none d-lg-flex row dec-block position-absolute w-100 mx-0 pt-5 mt-4">
                             <div class="mycol-lg-3 mycol-xl-4 bg-grayF8F8F8"></div>
                             <div class="mycol-lg-5 mycol-xl-4"></div>
@@ -51,12 +51,14 @@
                                 <div class="mycol-xl-1"></div>
                                 <div class="blank"></div>
                             </div>
-                            <div class="row mx-0 mb-2 mb-lg-5 pb-3 px-4 px-xl-0">
+                            <div class="d-block d-xl-flex row mx-0 mb-2 mb-lg-5 pb-3 px-4 px-xl-0">
                                 <div class="blank"></div>
-                                <img class="col-12 mycol-xl-6 px-0" src="styles/images/amenities/img-1.jpg" alt="" data-aos="fade-up">
+                                <div class="col-12 mycol-xl-6 px-0">
+                                    <img src="styles/images/amenities/img-1.jpg" alt="遠雄九五" data-aos="fade-up">
+                                </div>
                                 <div class="blank"></div>
                             </div>
-                            <div class="d-block d-lg-flex row mx-0 px-4 px-xl-0">
+                            <div class="d-block d-lg-flex row mx-0 px-4 px-xl-0 pb-1">
                                 <div class="blank"></div>
                                 <div class="col-7 mycol-xl-3 px-0"></div>
                                 <div class="mycol-xl-2">
@@ -78,13 +80,13 @@
 
                     </div>
                 </div>
-                <div class="amenities-section-2 mask pt-5 pb-xl-2" data-aos="fade-up">
-                    <div class="pb-lg-4 pt-lg-5 mb-5">
+                <div class="amenities-section-2 mask bg-white pt-5 pb-xl-2">
+                    <div class="pb-lg-4 pt-lg-5 pb-5" data-aos="fade-up">
                         <div class="swiper-container">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="jqimgFill">
-                                        <img src="styles/images/amenities/slider-1.jpg" alt="">
+                                        <img src="styles/images/amenities/slider-1.jpg" alt="遠雄九五">
                                     </div>
                                     <div class="text pl-xl-5 ml-xl-5 pt-md-4 pt-xl-5">
                                         <div class="px-4 pt-3 pt-md-0">
@@ -100,7 +102,7 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="jqimgFill">
-                                        <img src="styles/images/amenities/slider-2.jpg" alt="">
+                                        <img src="styles/images/amenities/slider-2.jpg" alt="遠雄九五">
                                     </div>
                                     <div class="text pl-xl-5 ml-xl-5 pt-md-4 pt-xl-5">
                                         <div class="px-4 pt-3 pt-md-0">
@@ -116,7 +118,7 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="jqimgFill">
-                                        <img src="styles/images/amenities/slider-3.jpg" alt="">
+                                        <img src="styles/images/amenities/slider-3.jpg" alt="遠雄九五">
                                     </div>
                                     <div class="text pl-xl-5 ml-xl-5 pt-md-4 pt-xl-5">
                                         <div class="px-4 pt-3 pt-md-0">
@@ -135,15 +137,15 @@
 
                             </div>
                             <div class="swiper-button swiper-button-prev">
-                                <img src="styles/images/svg/arrow-left.svg" alt="">
+                                <img src="styles/images/svg/arrow-left.svg" alt="遠雄九五">
                             </div>
                             <div class="swiper-button swiper-button-next">
-                                <img src="styles/images/svg/arrow-right.svg" alt="">
+                                <img src="styles/images/svg/arrow-right.svg" alt="遠雄九五">
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="amenities-section-3 mask pt-xl-5 pb-5">
+                <div class="amenities-section-3 mask bg-white pt-xl-5 pb-5">
                     <div class="pb-xl-4 mb-xl-2">
                         <div class="d-block d-lg-flex row mx-0">
                             <div class="mycol-lg-3 z-1 pl-4 pl-lg-0 pr-4 pr-xl-5">
@@ -165,23 +167,25 @@
                             </div>
                             <div class="mycol-lg-5 pt-xl-4">
                                 <div class="view-detail position-relative">
-                                    <div class="view-btn flex-center rounded-circle bg-white position-fixed point-event-none z-2">view</div>
+                                    <div class="view-btn flex-center rounded-circle bg-white absolute-center point-event-none z-2">view</div>
                                     <div class="wrapper">
-                                        <img src="styles/images/amenities/img-2.jpg" alt="" data-aos="fade-right">
+                                        <img src="styles/images/amenities/img-2.jpg" alt="遠雄九五" data-aos="fade-right">
                                     </div>
                                     <div class="detail position-absolute">
                                         <div>
-                                            <img src="styles/images/amenities/img-2-detail.jpg" alt="">
+                                            <img src="styles/images/amenities/img-2-detail.jpg" alt="遠雄九五">
                                         </div>
                                         <button type="button" class="position-absolute text-white">
-                                            <div class="flex-center rounded-circle border-white">
+                                            <span class="flex-center rounded-circle border-white">
                                                 <i class="icon-close lh1"></i>
-                                            </div>
+                                            </span>
                                             <span class="d-block font-16 mt-2 mt-md-3">返回大廳</span>
                                         </button>
                                     </div>
                                 </div>
-                                <button type="button" class="view rounded-circle text-white bg-brown ml-4 mt-4" data-toggle="modal" data-target="#view-1">VIEW</button>
+                                <button type="button" class="view rounded-circle text-white bg-brown ml-4 mt-4" data-toggle="modal" data-target="#view-1">
+                                    <span class="d-block mt-1">VIEW</span>
+                                </button>
                             </div>
                         </div>
                         <div class="d-block d-lg-flex row point-event-none mx-0 pb-xl-5 mb-xl-5 pt-4 pt-md-0">
@@ -190,30 +194,32 @@
                                 <div class="point-event-all pr-4 pr-xl-5 mr-xl-5">
                                     <p class="font-28 NotoSansTC mb-3 pb-1 pt-lg-5 mt-lg-5" data-aos="fade-right">ASTON MARTIN手工訂製家具</p>
                                     <div class="d-flex">
-                                        <div class="dec-block mr-4 pt-3" data-aos="fade-right" data-aos-delay="50"></div>
+                                        <div class="dec-block mr-2 mr-sm-4 pt-3" data-aos="fade-right" data-aos-delay="50"></div>
                                         <p class="font-20 text-6D6D6D pl-2" data-aos="fade-right" data-aos-delay="100">汲取超跑座椅弧度為靈感，流線俐落的桌椅彷彿在空間裡奔馳。讓人捨不得起身的舒適，釋放心靈最深處的感動與想像。</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="mycol-lg-5 mycol-xl-4 point-event-all">
-                                <div class="view-detail position-relative">
-                                    <div class="view-btn flex-center rounded-circle bg-white position-fixed point-event-none z-2">view</div>
+                                <div class="view-detail position-relative d-table z-3">
+                                    <div class="view-btn flex-center rounded-circle bg-white absolute-center point-event-none z-2">view</div>
                                     <div class="wrapper">
-                                        <img src="styles/images/amenities/img-3.jpg" alt="" data-aos="fade-left">
+                                        <img src="styles/images/amenities/img-3.jpg" alt="遠雄九五" data-aos="fade-left">
                                     </div>
                                     <div class="detail position-absolute">
                                         <div>
-                                            <img src="styles/images/amenities/img-3-detail.jpg" alt="">
+                                            <img src="styles/images/amenities/img-3-detail.jpg" alt="遠雄九五">
                                         </div>
                                         <button type="button" class="position-absolute text-white">
-                                            <div class="flex-center rounded-circle border-white">
+                                            <span class="flex-center rounded-circle border-white">
                                                 <i class="icon-close lh1"></i>
-                                            </div>
+                                            </span>
                                             <span class="d-block font-16 mt-2 mt-md-3">返回大廳</span>
                                         </button>
                                     </div>
                                 </div>
-                                <button type="button" class="view rounded-circle text-white bg-brown ml-auto mr-4 mt-4" data-toggle="modal" data-target="#view-2">VIEW</button>
+                                <button type="button" class="view rounded-circle text-white bg-brown ml-auto mr-4 mt-4" data-toggle="modal" data-target="#view-2">
+                                    <span class="d-block mt-1">VIEW</span>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -227,21 +233,21 @@
             <!-- Modal -->
             <div class="amenities-modal modal fade" id="view-1" tabindex="-1" role="dialog" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered max960 p-4 p-xl-0" role="document">
-                    <div class="modal-content p-2">
+                    <div class="modal-content">
                         <button type="button" class="text-white position-absolute" data-dismiss="modal">
                             <i class="icon-close"></i>
                         </button>
-                        <img src="styles/images/amenities/img-2-detail.jpg" alt="">
+                        <img src="styles/images/amenities/img-2-detail.jpg" alt="遠雄九五">
                     </div>
                 </div>
             </div>
             <div class="amenities-modal modal fade" id="view-2" tabindex="-1" role="dialog" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered max960 p-4 p-xl-0" role="document">
-                    <div class="modal-content p-2">
+                    <div class="modal-content">
                         <button type="button" class="text-white position-absolute" data-dismiss="modal">
                             <i class="icon-close"></i>
                         </button>
-                        <img src="styles/images/amenities/img-3-detail.jpg" alt="">
+                        <img src="styles/images/amenities/img-3-detail.jpg" alt="遠雄九五">
                     </div>
                 </div>
             </div>
